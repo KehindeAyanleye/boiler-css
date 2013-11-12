@@ -43,20 +43,20 @@
     .nytimes .left_column .story {
       height: 20%;
       width: 96%;
-      padding: 0 2% 5% 2%;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc; }
+      padding: 10% 2% 5% 2%; }
       .nytimes .left_column .story h1 {
         text-align: left;
         font-size: 1.3em; }
       .nytimes .left_column .story p {
-        margin-top: 1%;
+        margin-top: 5%;
         font-size: 1.15em; }
+      .nytimes .left_column .story:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white; }
   .nytimes .photo_slide {
     float: left;
     margin-top: 5%;
     padding-top: 2%;
-    border: 1px solid black;
     height: 80.5%;
     width: 40%;
     overflow: auto;
@@ -67,7 +67,6 @@
     float: left;
     margin-top: 5%;
     padding-top: 2%;
-    border: 1px solid black;
     height: 80.5%;
     width: 30%;
     overflow: auto;
@@ -75,7 +74,7 @@
     .nytimes .right_column img {
       width: 95%; }
 
-.dashboard {
+.serpentine {
   position: relative;
   background-color: white;
   border: 5px solid rgba(236, 2, 128, 0.85); }
