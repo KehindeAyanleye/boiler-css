@@ -1,0 +1,92 @@
+.center {
+  text-align: center; }
+
+.hidden {
+  visibility: hidden; }
+
+.center {
+  text-align: center; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+body {
+  position: relative; }
+
+.content {
+  position: absolute;
+  z-index: -1;
+  font-family: 'Fenix', cursive;
+  height: 100%;
+  width: 100%; }
+
+.brand {
+  z-index: 1;
+  position: fixed;
+  padding: 1%;
+  margin-top: 0.3%;
+  margin-bottom: 0.5%;
+  margin-left: 0.3%;
+  background-color: white;
+  border-radius: 3px;
+  font-family: 'Snippet', cursive;
+  text-align: center;
+  font-size: 2em;
+  -moz-box-shadow: 0 0 10px #888888;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888; }
+
+.navbox {
+  position: absolute;
+  top: 12%;
+  height: auto;
+  width: 10%;
+  z-index: 1;
+  padding: 1%;
+  display: none;
+  margin-left: 0.3%;
+  background-color: white;
+  border-radius: 3px;
+  -moz-box-shadow: 0 0 10px #888888;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888;
+  text-align: center;
+  border-bottom: 2px solid #ccc; }
+  .navbox .nav-button {
+    width: 100%;
+    font-size: 1.6em;
+    font-family: 'Fenix', serif;
+    margin-bottom: 5.3%; }
+    .navbox .nav-button a {
+      color: black; }
+    .navbox .nav-button:hover {
+      background-color: #888; }
+  .navbox .nav-seperator {
+    width: 90%;
+    height: 2px;
+    background-color: #888; }
+
+.right {
+  float: right; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 500; }
+
+h3 {
+  font-size: 1.3em; }
+
+a {
+  color: #00B7FF;
+  text-decoration: none; }
+
+b {
+  font-weight: 900; }

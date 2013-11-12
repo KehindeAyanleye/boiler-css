@@ -1,0 +1,27 @@
+doctype 5
+html(ng-app='GM')
+
+  head
+    title Figment
+    link(rel="icon", type="image/png", href="/images/favicon.ico")
+    link(href='http://fonts.googleapis.com/css?family=Fenix', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Snippet', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/styles/lib/reset.css')
+    //- link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css")
+    link(rel='stylesheet', href='/styles/fragment.css')
+    link(rel='stylesheet', href='/styles/style.css')
+
+  body.container
+    include navbar
+
+    .content(ng-view)
+
+    script(src="http://localhost:35729/livereload.js")
+    script(src='/components/jquery/jquery.min.js')
+    script(src='/components/angular/angular.min.js')
+    script(src='/scripts/animations.js')
+    script(src='/scripts/lib/Chart.min.js')
+    script(src='/scripts/charts.js')
+    script(src='/scripts/app.js')
+    script(src='/scripts/routes.js')
+    script(src='/scripts/controllers/users_controller.js')
