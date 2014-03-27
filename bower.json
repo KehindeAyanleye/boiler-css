@@ -1,8 +1,7 @@
 {
-  "name": "Glow",
+  "name": "BoilerCSS",
   "version": "0.0.1",
-  "description": "facebook ad management platform",
-  "main": "start.js",
+  "description": "Another responsive front-end framework. It's like Bootstrap, but not.",
   "authors": [
     "cjponti"
   ],
@@ -15,8 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "components": "*",
-    "angular": "*",
-    "jquery": "*"
+
   }
 }
