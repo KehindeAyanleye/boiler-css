@@ -11,7 +11,7 @@ gulp.task('concat', function() {
 gulp.task('less', function() {
 	gulp.src('src/boiler/boiler.less')
 		.pipe(less())
-		.pipe(gulp.dest('build'))
+		.pipe(gulp.dest('dist'))
 });
 
 gulp.task('watch', function() {
