@@ -18,4 +18,6 @@ gulp.task('watch', function() {
 	gulp.watch('src/boiler/**/*.less', ['less']);
 });
 
+gulp.task('build', [ 'less', 'concat' ]);
+
 gulp.task('default', [ 'watch' ]);
