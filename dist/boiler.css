@@ -195,6 +195,7 @@ a {
   color: #f4f4f4;
 }
 .navbar-container .navbar .navbar-item {
+  height: 100%;
   padding: 1rem;
   display: inline-block;
 }
