@@ -1,9 +1,6 @@
 .menu {
-	height: 3.125rem;
 	padding: 0 0.5rem;
 	width: 100%;
-	top: 0; left: 0;
-	position: fixed;
 	background-color: @menu-background;
 	font-weight: 300;
 	color: @menu-text-color;
@@ -12,18 +9,20 @@
 		color: @menu-link-color;
 	}
 
-	.menu-item {
+	.column {
 		padding: 1rem;
 		display: inline-block;
 	}
 
-	.menu-item:hover {
+	.column:hover {
 		background-color: @menu-link-hover-color;
+		a {
+			color: @menu-background;
+		}
 	}
 
 	.menu-dropdown {
 		display: inline-block;
-		height: 100%;
 	}
 
 	.brand {
@@ -46,17 +45,14 @@
 	}
 
 	.user {
-		height: 100%;
 		padding: 0;
-		font-size: 0.8rem;
+		font-size: 0rem;
 		position: relative;
 		.photo {
-			height: 100%;
-			width: auto;
-			display: inline-block;
 			overflow: hidden;
+			display: inline-block;
 			img {
-				height: 90%;
+				height: 3rem;
 			}
 		}/* photo */
 		.name {
@@ -72,5 +68,5 @@
 		background-color: @dark-grey-blue;
 		padding: 1rem 0.3rem;
 	} /* user-menu*/
-	
+
 } /* menu */
