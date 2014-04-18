@@ -128,6 +128,9 @@ table {
   border-spacing: 0;
 }
 /** Helpers */
+/******************
+ * Colors
+ ******************/
 /**
  * This adds a solid black border to elements, which comes in handy for
  * wireframing a site
@@ -135,14 +138,8 @@ table {
 .wireframe {
   border: 2px solid black;
 }
-/**
- * Center element horizontally
- */
-.center {
-  margin: 0 auto;
-}
 /******************
- * Colors
+ * Styles
  ******************/
 /******************
  * Fonts
@@ -219,7 +216,7 @@ body {
 /* Set style for page parent container */
 #container {
   margin: 0 auto;
-  padding-top: 4rem;
+  padding: 4rem 1rem 0;
   width: 100%;
   height: 100%;
 }
@@ -254,37 +251,36 @@ a {
 }
 /* row */
 /* Columns */
-.col {
+.column {
   display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 /* rol */
-.col-10 {
+.column-10 {
   width: 10%;
 }
-.col-20 {
+.column-20 {
   width: 20%;
 }
-.col-30 {
+.column-30 {
   width: 30%;
 }
-.col-40 {
+.column-40 {
   width: 40%;
 }
-.col-50 {
+.column-50 {
   width: 50%;
 }
-.col-60 {
+.column-60 {
   width: 60%;
 }
-.col-70 {
+.column-70 {
   width: 70%;
 }
-.col-80 {
+.column-80 {
   width: 80%;
 }
-.col-90 {
+.column-90 {
   width: 90%;
 }
 .full {
@@ -302,6 +298,16 @@ a {
 .fourth {
   width: 24.95%;
 }
+/* Relative positon */
+.relative {
+  position: relative;
+}
+/* Fixed position */
+.top-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 /* Float element left */
 .left {
   float: left;
@@ -315,82 +321,73 @@ a {
   margin: 0 auto;
 }
 /** Styles */
-.navbar-container {
-  height: 3.125rem;
+.menu {
   padding: 0 0.5rem;
   width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
   background-color: #2c2f3e;
   font-weight: 300;
   color: #f4f4f4;
-  /* navbar */
-}
-.navbar-container .navbar {
-  list-style: none;
   /* user */
   /* user-menu*/
 }
-.navbar-container .navbar a {
+.menu a {
   color: #f4f4f4;
 }
-.navbar-container .navbar .navbar-item {
+.menu .column {
   padding: 1rem;
   display: inline-block;
 }
-.navbar-container .navbar .navbar-item:hover {
-  background-color: #95a5a6;
+.menu .column:hover {
+  background-color: #f4f4f4;
 }
-.navbar-container .navbar .navbar-dropdown {
+.menu .column:hover a {
+  color: #2c2f3e;
+}
+.menu .menu-dropdown {
   display: inline-block;
-  height: 100%;
 }
-.navbar-container .navbar .brand {
+.menu .brand {
   padding-top: 0.55em;
   padding-bottom: 0.55rem;
   font-size: 1.5rem;
 }
-.navbar-container .navbar .login {
+.menu .login {
   padding: 1rem;
 }
-.navbar-container .navbar .login-buttons {
+.menu .login-buttons {
   text-align: center;
   margin-left: -9rem;
   background-color: #2c2f3e;
 }
-.navbar-container .navbar .login-buttons button {
+.menu .login-buttons button {
   padding: 0.7rem;
 }
-.navbar-container .navbar .user {
-  height: 100%;
+.menu .user {
   padding: 0;
-  font-size: 0.8rem;
+  font-size: 0rem;
   position: relative;
   /* photo */
   /* name */
 }
-.navbar-container .navbar .user .photo {
-  height: 100%;
-  width: auto;
-  display: inline-block;
+.menu .user .photo {
   overflow: hidden;
+  display: inline-block;
 }
-.navbar-container .navbar .user .photo img {
-  height: 90%;
+.menu .user .photo img {
+  height: 3rem;
 }
-.navbar-container .navbar .user .name {
+.menu .user .name {
   overflow: hidden;
   display: inline-block;
   padding: 1rem;
   font-size: 1rem;
 }
-.navbar-container .navbar .user-menu {
+.menu .user-menu {
   text-align: center;
   background-color: #2c2f3e;
   padding: 1rem 0.3rem;
 }
-/* navbar-container */
+/* menu */
 .boiler-form-element {
   padding: 0.3rem;
   width: 15rem;
