@@ -21,13 +21,13 @@ gulp.task('server', function(next) {
 gulp.task('concat', function() {
 	gulp.src('build/boiler.css')
 		.pipe(concat('boiler.min.css'))
-		.pipe(gulp.dest('dist'))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('less', function() {
 	gulp.src('src/boiler.less')
 		.pipe(less())
-		.pipe(gulp.dest('dist'))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {
