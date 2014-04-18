@@ -332,15 +332,13 @@ a {
 .menu a {
   color: #2c2f3e;
 }
-.menu .column {
-  padding: 1rem;
+.menu > * {
   background-color: #ffffff;
-  display: inline-block;
 }
-.menu .column:hover {
+.menu > *:hover {
   background-color: #7fc1ea;
 }
-.menu .column:hover a {
+.menu > *:hover a {
   color: #ffffff;
 }
 .menu .menu-dropdown {
