@@ -1,3 +1,133 @@
+/** Reset file */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** Helpers */
 /**
  * This adds a solid black border to elements, which comes in handy for
  * wireframing a site
@@ -23,16 +153,7 @@
 /******************
  * Other
  ******************/
-/* Small screens (default) */
-html {
-  font-size: 100%;
-}
-body {
-  /* Set letter spacing for better readability */
-  letter-spacing: 0.05rem;
-  /* Set font style */
-  font: 'Helvetica Neue', Arial, sans-serif;
-}
+/** SMACSS File Layout */
 /**
  * Enable border-box box-sizing. This will contain the padding and border
  * within the set width of an element. The margin will be outside the width.
@@ -53,6 +174,23 @@ body {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
+}
+/* Small screens (default) */
+html {
+  font-size: 100%;
+  height: 100%;
+  position: relative;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* Set letter spacing for better readability */
+  letter-spacing: 0.05rem;
+  /* Set font style */
+  font: 'Helvetica Neue', Arial, sans-serif;
 }
 /**
  * For modern browsers
@@ -81,19 +219,9 @@ body {
 /* Set style for page parent container */
 #container {
   margin: 0 auto;
-  margin-top: 2rem;
-  padding: 1rem;
-  padding-top: 1rem;
+  padding-top: 4rem;
   width: 100%;
   height: 100%;
-}
-/* Float element left */
-.left {
-  float: left;
-}
-/* Float element right */
-.right {
-  float: right;
 }
 /**
  * Element that will toggle a sibling element with class of .dropdown-menu
@@ -114,6 +242,47 @@ body {
 .dropdown-menu:hover {
   /* Change display of dropdown menu to block upon hover */
   display: block;
+}
+/* Remove decoration from links */
+a {
+  text-decoration: none;
+}
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* row */
+/* Columns */
+.col-1 {
+  width: 10%;
+}
+.col-2 {
+  width: 20%;
+}
+.col-3 {
+  width: 30%;
+}
+.col-4 {
+  width: 40%;
+}
+.col-5 {
+  width: 50%;
+}
+.col-6 {
+  width: 60%;
+}
+.col-7 {
+  width: 70%;
+}
+.col-8 {
+  width: 80%;
+}
+.col-9 {
+  width: 90%;
+}
+.col-10 {
+  width: 100%;
 }
 @media (min-width: 40rem) {
   .col {
@@ -140,41 +309,15 @@ body {
     float: right;
   }
 }
-/* Remove decoration from links */
-a {
-  text-decoration: none;
+/* Float element left */
+.left {
+  float: left;
 }
-/* Large screens (384px) */
-@media all and (max-width: 24rem) {
-  .container {
-    margin-top: 2rem;
-  }
+/* Float element right */
+.right {
+  float: right;
 }
-/* Medium screens (640px) */
-@media all and (max-width: 46.8rem) {
-  .container {
-    margin-top: 2rem;
-  }
-}
-@media all and (max-width: 50rem) {
-  .container {
-    margin-top: 2rem;
-  }
-}
-/* Large screens (1024px) */
-@media all and (min-width: 73rem) {
-  .container {
-    margin-top: 2rem;
-  }
-}
-.row {
-  margin: 0;
-  width: 100%;
-  list-style-type: none;
-}
-.row .row-block {
-  display: inline-block;
-}
+/** Styles */
 .navbar-container {
   height: 3.125rem;
   padding: 0 0.5rem;
@@ -187,8 +330,6 @@ a {
   color: #f4f4f4;
 }
 .navbar-container .navbar {
-  margin: 0;
-  height: 100%;
   list-style: none;
 }
 .navbar-container .navbar a {
@@ -317,4 +458,29 @@ a {
 }
 .btn-twitter * {
   display: inline-block;
+}
+/** Breakpoint-specific styles */
+/* Small screens (384px) */
+@media all and (max-width: 24rem) {
+  .container {
+    margin-top: 2rem;
+  }
+}
+/* Medium screens (640px) */
+@media all and (max-width: 46.8rem) {
+  .container {
+    margin-top: 2rem;
+  }
+}
+/* Large screens (800px) */
+@media all and (max-width: 50rem) {
+  .container {
+    margin-top: 2rem;
+  }
+}
+/* X-Large screens (1024px) */
+@media all and (min-width: 73rem) {
+  .container {
+    margin-top: 2rem;
+  }
 }
