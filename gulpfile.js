@@ -7,7 +7,7 @@ var gutil = require('gulp-util');
 gulp.task('server', function(next) {
 	var staticS = require('node-static'),
 			server = new staticS.Server('./'),
-			port = 3000;
+			port = 4000;
 	require('http').createServer(function (request, response) {
 		request.addListener('end', function () {
 			server.serve(request, response);
