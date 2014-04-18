@@ -5,27 +5,24 @@
 } /* row */
 
 /* Columns */
-.col-1 { width: 10%; }
-.col-2 { width: 20%; }
-.col-3 { width: 30%; }
-.col-4 { width: 40%; }
-.col-5 { width: 50%; }
-.col-6 { width: 60%; }
-.col-7 { width: 70%; }
-.col-8 { width: 80%; }
-.col-9 { width: 90%; }
-.col-10 { width: 100%; }
+.col {
+	display: inline-block;
+	padding-left: 1rem;
+	padding-right: 1rem;
+} /* rol */
 
-@media (min-width: 40rem) {
-	.col {
-		float: left;
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-	.col.full { width: 100%; }
-	.col.two-thirds { width: 66.7%; }
-	.col.half { width: 50%; }
-	.col.third { width: 33.3%; }
-	.col.fourth { width: 24.95%; }
-	.col.flow-opposite { float: right; }
-}
+.col-10 { width: 10%; }
+.col-20 { width: 20%; }
+.col-30 { width: 30%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-70 { width: 70%; }
+.col-80 { width: 80%; }
+.col-90 { width: 90%; }
+
+.full { width: 100%; }
+.two-thirds { width: 66.7%; }
+.half { width: 50%; }
+.third { width: 33.3%; }
+.fourth { width: 24.95%; }
