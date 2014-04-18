@@ -36,4 +36,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', [ 'less', 'concat' ]);
 
-gulp.task('default', [ 'server', 'watch' ]);
+gulp.task('default', [ 'build', 'watch', 'server' ]);
