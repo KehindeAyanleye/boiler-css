@@ -334,13 +334,14 @@ a {
 }
 .menu .column {
   padding: 1rem;
+  background-color: #ffffff;
   display: inline-block;
 }
 .menu .column:hover {
-  background-color: #2c2f3e;
+  background-color: #7fc1ea;
 }
 .menu .column:hover a {
-  color: #f4f4f4;
+  color: #ffffff;
 }
 .menu .menu-dropdown {
   display: inline-block;
