@@ -1,0 +1,76 @@
+.menu {
+	height: 3.125rem;
+	padding: 0 0.5rem;
+	width: 100%;
+	top: 0; left: 0;
+	position: fixed;
+	background-color: @menu-background;
+	font-weight: 300;
+	color: @menu-text-color;
+
+	a {
+		color: @menu-link-color;
+	}
+
+	.menu-item {
+		padding: 1rem;
+		display: inline-block;
+	}
+
+	.menu-item:hover {
+		background-color: @menu-link-hover-color;
+	}
+
+	.menu-dropdown {
+		display: inline-block;
+		height: 100%;
+	}
+
+	.brand {
+		padding-top: 0.55em;
+		padding-bottom: 0.55rem;
+		font-size: 1.5rem;
+	}
+
+	.login {
+		padding: 1rem;
+	}
+
+	.login-buttons {
+		text-align: center;
+		margin-left: -9rem;
+		background-color: @dark-grey-blue;
+		button {
+			padding: 0.7rem;
+		}
+	}
+
+	.user {
+		height: 100%;
+		padding: 0;
+		font-size: 0.8rem;
+		position: relative;
+		.photo {
+			height: 100%;
+			width: auto;
+			display: inline-block;
+			overflow: hidden;
+			img {
+				height: 90%;
+			}
+		}/* photo */
+		.name {
+			overflow: hidden;
+			display: inline-block;
+			padding: 1rem;
+			font-size: 1rem;
+		} /* name */
+	} /* user */
+
+	.user-menu {
+		text-align: center;
+		background-color: @dark-grey-blue;
+		padding: 1rem 0.3rem;
+	} /* user-menu*/
+	
+} /* menu */
