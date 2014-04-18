@@ -1,6 +1,6 @@
 {
   "name": "Boiler-CSS",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Another responsive front-end framework. It's like Bootstrap, but not.",
   "private": true,
   "scripts": {
