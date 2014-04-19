@@ -1,8 +1,16 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var csslint = require('gulp-csslint');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
 var gutil = require('gulp-util');
+
+var customReporter = function(file) {
+  gutil.log(gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.path));
+  file.csslint.results.forEach(function(result) {
+    gutil.log(result.error.message+' on line '+result.error.line);
+  });
+};
 
 gulp.task('server', function(next) {
 	var staticS = require('node-static'),
@@ -20,6 +28,8 @@ gulp.task('server', function(next) {
 
 gulp.task('concat', function() {
 	gulp.src('build/boiler.css')
+		.pipe(csslint())
+		.pipe(csslint.reporter(customReporter))
 		.pipe(concat('boiler.min.css'))
 		.pipe(gulp.dest('dist'));
 });

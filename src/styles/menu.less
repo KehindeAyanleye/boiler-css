@@ -1,14 +1,16 @@
 .menu {
-	padding: 0 0.5rem;
-	width: 100%;
-	font-weight: 300;
 	color: @menu-text-color;
 
 	a {
 		color: @menu-link-color;
 	}
 	
+	& * {
+		overflow: hidden;
+	}
+
 	& > * {
+		padding: 1rem;
 		background-color: @menu-column-background;
 	}
 	
@@ -19,52 +21,32 @@
 		}
 	}
 
-	.menu-dropdown {
-		display: inline-block;
-	}
-
 	.brand {
-		padding-top: 0.55em;
-		padding-bottom: 0.55rem;
+		padding: 0.9rem 1rem;
 		font-size: 1.5rem;
 	}
-
-	.login {
-		padding: 1rem;
-	}
-
-	.login-buttons {
-		text-align: center;
-		margin-left: -9rem;
-		background-color: @dark-grey-blue;
-		button {
-			padding: 0.7rem;
-		}
-	}
-
-	.user {
-		padding: 0;
-		font-size: 0rem;
-		position: relative;
-		.photo {
-			overflow: hidden;
-			display: inline-block;
-			img {
-				height: 3rem;
-			}
-		}/* photo */
-		.name {
-			overflow: hidden;
-			display: inline-block;
-			padding: 1rem;
-			font-size: 1rem;
-		} /* name */
-	} /* user */
-
-	.user-menu {
-		text-align: center;
-		background-color: @dark-grey-blue;
-		padding: 1rem 0.3rem;
-	} /* user-menu*/
+	
+	.no-h-pad { .no-h-pad; }
+	.no-v-pad { .no-v-pad; }
 
 } /* menu */
+
+.horizontal {
+	& > * {
+		display: inline-block;
+	}
+}
+
+/* Dropdown menu */
+.dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	display: none;
+	text-align: center;
+	& > * {
+		display: block;
+		padding: 0.8rem 1rem;
+	}
+}
