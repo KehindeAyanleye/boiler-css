@@ -8,35 +8,22 @@
 </head>
 <body>
 	<div id="container" class="relative">
-		<nav class="menu top-left" role="navigation">
-			<div class="column">
-				<a href="#">Home</a>
-			</div>
-			<div class="column">
-				<a href="#">Link 1</a>
-			</div>
-			<div class="column">
-				<a href="#">Link 2</a>
-			</div>
-			<div class="column">
-				<a href="#">Link 3</a>
-			</div>
-			<div class="column user right">
-				<div class="user">
-					<div class="photo">
-						<img src="mocks/images/user.png" alt="user's picture">
-					</div>
-					<div class="name">
-						<a href="#">
-							John Doe
-						</a>
-					</div>
+		<nav class="menu horizontal fixed-top full" role="navigation">
+			<a href="#">Home</a>
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+			<div class="no-v-pad right dropdown">
+				<img class="inline small no-pad" src="mocks/images/user.png" alt="user's picture">
+				<a class="inline pad-top-1 height-three" href="#">John Doe</a>
+				<div class="dropdown-menu">
+					<a href="#">Profile</a>
+					<a href="#">Log Out</a>
 				</div>
 			</div>
 		</nav>
 
 		<h1>Hello World</h1>
-
 	</div>
 </body>
 </html>

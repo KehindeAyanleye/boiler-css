@@ -1,26 +1,38 @@
+/* Inline element */
+.block { display: block; }
+.inline { display: inline-block; }
+
 /* Relative positon */
-.relative {
-	position: relative;
-}
+.relative { position: relative; }
+.absolute { position: absolute; }
 
 /* Fixed position */
-.top-left {
+.fixed-top {
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 
 /* Float element left */
-.left {
-	float: left;
-}
+.left { float: left; }
 
 /* Float element right */
-.right {
-	float: right;
-}
+.right { float: right; }
 
-/* Center element */
-.center {
-	margin: 0 auto;
-}
+/** Centering **/
+.center { margin: 0 auto; }
+.v-center { vertical-align: middle; }
+.center-text { text-align: center; }
+
+/** Padding **/
+.pad-top-1 { padding-top: 1rem; }
+.no-pad { padding: 0; }
+.no-t-pad { padding-top: 0; }
+.no-b-pad { padding-bottom: 0; }
+.no-l-pad { padding-left: 0; }
+.no-r-pad { padding-right: 0; }
+.no-h-pad { .no-l-pad; .no-r-pad; }
+.no-v-pad { .no-t-pad; .no-b-pad; }
+
+/** Height */
+.height-three { height: 3rem; }

@@ -220,26 +220,6 @@ body {
   width: 100%;
   height: 100%;
 }
-/**
- * Element that will toggle a sibling element with class of .dropdown-menu
- */
-.dropdown-toggle {
-  /* Change display of dropdown menu to block upon hover of its trigger */
-}
-.dropdown-toggle:hover ~ .dropdown-menu {
-  display: block;
-}
-/**
- * Drop-down menu
- */
-.dropdown-menu {
-  /* Hide dropdown menus by default */
-  display: none;
-}
-.dropdown-menu:hover {
-  /* Change display of dropdown menu to block upon hover */
-  display: block;
-}
 /* Remove decoration from links */
 a {
   text-decoration: none;
@@ -298,12 +278,22 @@ a {
 .fourth {
   width: 24.95%;
 }
+/* Inline element */
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
 /* Relative positon */
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 /* Fixed position */
-.top-left {
+.fixed-top {
   position: fixed;
   top: 0;
   left: 0;
@@ -316,23 +306,58 @@ a {
 .right {
   float: right;
 }
-/* Center element */
+/** Centering **/
 .center {
   margin: 0 auto;
 }
-/** Styles */
+.v-center {
+  vertical-align: middle;
+}
+.center-text {
+  text-align: center;
+}
+/** Padding **/
+.pad-top-1 {
+  padding-top: 1rem;
+}
+.no-pad {
+  padding: 0;
+}
+.no-t-pad {
+  padding-top: 0;
+}
+.no-b-pad {
+  padding-bottom: 0;
+}
+.no-l-pad {
+  padding-left: 0;
+}
+.no-r-pad {
+  padding-right: 0;
+}
+.no-h-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-v-pad {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/** Height */
+.height-three {
+  height: 3rem;
+}
 .menu {
-  padding: 0 0.5rem;
-  width: 100%;
-  font-weight: 300;
   color: #2c2f3e;
-  /* user */
-  /* user-menu*/
 }
 .menu a {
   color: #2c2f3e;
 }
+.menu * {
+  overflow: hidden;
+}
 .menu > * {
+  padding: 1rem;
   background-color: #ffffff;
 }
 .menu > *:hover {
@@ -341,51 +366,34 @@ a {
 .menu > *:hover a {
   color: #ffffff;
 }
-.menu .menu-dropdown {
-  display: inline-block;
-}
 .menu .brand {
-  padding-top: 0.55em;
-  padding-bottom: 0.55rem;
+  padding: 0.9rem 1rem;
   font-size: 1.5rem;
 }
-.menu .login {
-  padding: 1rem;
+.menu .no-h-pad {
+  padding-left: 0;
+  padding-right: 0;
 }
-.menu .login-buttons {
-  text-align: center;
-  margin-left: -9rem;
-  background-color: #2c2f3e;
-}
-.menu .login-buttons button {
-  padding: 0.7rem;
-}
-.menu .user {
-  padding: 0;
-  font-size: 0rem;
-  position: relative;
-  /* photo */
-  /* name */
-}
-.menu .user .photo {
-  overflow: hidden;
-  display: inline-block;
-}
-.menu .user .photo img {
-  height: 3rem;
-}
-.menu .user .name {
-  overflow: hidden;
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1rem;
-}
-.menu .user-menu {
-  text-align: center;
-  background-color: #2c2f3e;
-  padding: 1rem 0.3rem;
+.menu .no-v-pad {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 /* menu */
+.horizontal > * {
+  display: inline-block;
+}
+/* Dropdown menu */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  display: none;
+  text-align: center;
+}
+.dropdown-menu > * {
+  display: block;
+  padding: 0.8rem 1rem;
+}
 .boiler-form-element {
   padding: 0.3rem;
   width: 15rem;
@@ -456,6 +464,9 @@ a {
 }
 .btn-twitter * {
   display: inline-block;
+}
+img.small {
+  height: 3rem;
 }
 /** Breakpoint-specific styles */
 /* Small screens (384px) */
