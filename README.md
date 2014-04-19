@@ -30,23 +30,24 @@ $ gulp
 ## Usage
 
 ### Navigation Bar
+
+![Fixed Top Navigation Bar](./images/nav_bar.png)
+
 ```html
-<nav class="navbar-container" role="navigation">
-    <ul class="navbar">
-        <li class="navbar-item">
-            <a href="/">Home</a>
-        </li>
-        <li class="navbar-item">
-            <a href="/lists">Lists</a>
-        </li>
-        <li class="navbar-item">
-            <a href="/lists/new">New List</a>
-        </li>
-        <li class="navbar-item">
-            <a href="/about">About</a>
-        </li>
-    </ul>
-</nav>
+        <nav class="menu horizontal fixed-top full" role="navigation">
+            <a href="#">Home</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <div class="no-v-pad right dropdown">
+                <img class="inline small no-pad" src="mocks/images/user.png" alt="user's picture">
+                <a class="inline pad-top-1 height-three" href="#">John Doe</a>
+                <div class="dropdown-menu">
+                    <a href="#">Profile</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </nav>
 ```
 
 ## Now Rock Out!
