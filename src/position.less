@@ -1,23 +1,19 @@
-/* Inline element */
+/* Display */
 .block { display: block; }
 .inline { display: inline-block; }
 
-/* Relative positon */
-.relative { position: relative; }
-.absolute { position: absolute; }
+/* Position */
+.rel { position: relative; }
+.fix { position: fixed; }
+.abs { position: absolute; }
+.t-r { top: 0; right: 0; }
+.t-l { top: 0; left: 0; }
+.b-r { bottom: 0; right: 0; }
+.b-r { bottom: 0; left: 0; }
 
-/* Fixed position */
-.fixed-top {
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-/* Float element left */
-.left { float: left; }
-
-/* Float element right */
-.right { float: right; }
+/* Floating */
+.float-l { float: left; }
+.float-r { float: right; }
 
 /** Centering **/
 .center { margin: 0 auto; }
@@ -25,7 +21,6 @@
 .center-text { text-align: center; }
 
 /** Padding **/
-.pad-top-1 { padding-top: 1rem; }
 .no-pad { padding: 0; }
 .no-t-pad { padding-top: 0; }
 .no-b-pad { padding-bottom: 0; }
@@ -33,6 +28,4 @@
 .no-r-pad { padding-right: 0; }
 .no-h-pad { .no-l-pad; .no-r-pad; }
 .no-v-pad { .no-t-pad; .no-b-pad; }
-
-/** Height */
-.height-three { height: 3rem; }
+.kill-pad { .no-h-pad; .no-v-pad; }
