@@ -391,6 +391,17 @@ a {
   padding-bottom: 0;
 }
 /* Styles */
+.hero {
+  height: 30rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.hero .headline {
+  text-align: center;
+  font-size: 3rem;
+}
+/* .hero */
 .menu {
   color: #2c2f3e;
 }
