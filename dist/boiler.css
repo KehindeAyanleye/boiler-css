@@ -151,6 +151,22 @@ table {
  * Other
  ******************/
 /** SMACSS File Layout */
+html {
+  font-size: 100%;
+  height: 100%;
+  position: relative;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* Set letter spacing for better readability */
+  letter-spacing: 0.05rem;
+  /* Set font style */
+  font: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
 /**
  * Enable border-box box-sizing. This will contain the padding and border
  * within the set width of an element. The margin will be outside the width.
@@ -166,28 +182,13 @@ table {
  * Kill margins added in Webkit browers
  */
 * {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
-}
-/* Small screens (default) */
-html {
-  font-size: 100%;
-  height: 100%;
-  position: relative;
-}
-body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  /* Set letter spacing for better readability */
-  letter-spacing: 0.05rem;
-  /* Set font style */
-  font: 'Helvetica Neue', Arial, sans-serif;
 }
 /**
  * For modern browsers
@@ -229,39 +230,70 @@ a {
   padding: 0;
   width: 100%;
 }
+.row > * {
+  display: inline-block;
+}
 /* row */
 /* Columns */
-.column {
+.col {
   display: inline-block;
   padding: 1rem;
 }
 /* rol */
-.column-10 {
+.col-10 {
   width: 10%;
 }
-.column-20 {
+.col-20 {
   width: 20%;
 }
-.column-30 {
+.col-30 {
   width: 30%;
 }
-.column-40 {
+.col-40 {
   width: 40%;
 }
-.column-50 {
+.col-50 {
   width: 50%;
 }
-.column-60 {
+.col-60 {
   width: 60%;
 }
-.column-70 {
+.col-70 {
   width: 70%;
 }
-.column-80 {
+.col-80 {
   width: 80%;
 }
-.column-90 {
+.col-90 {
   width: 90%;
+}
+/* Push element */
+.push-1 {
+  left: 10%;
+}
+.push-2 {
+  left: 20%;
+}
+.push-3 {
+  left: 30%;
+}
+.push-4 {
+  left: 40%;
+}
+.push-5 {
+  left: 50%;
+}
+.push-6 {
+  left: 60%;
+}
+.push-7 {
+  left: 70%;
+}
+.push-8 {
+  left: 80%;
+}
+.push-9 {
+  left: 90%;
 }
 .full {
   width: 100%;
@@ -278,32 +310,44 @@ a {
 .fourth {
   width: 24.95%;
 }
-/* Inline element */
+/* Display */
 .block {
   display: block;
 }
 .inline {
   display: inline-block;
 }
-/* Relative positon */
-.relative {
+/* Position */
+.rel {
   position: relative;
 }
-.absolute {
+.fix {
+  position: fixed;
+}
+.abs {
   position: absolute;
 }
-/* Fixed position */
-.fixed-top {
-  position: fixed;
+.t-r {
+  top: 0;
+  right: 0;
+}
+.t-l {
   top: 0;
   left: 0;
 }
-/* Float element left */
-.left {
+.b-r {
+  bottom: 0;
+  right: 0;
+}
+.b-r {
+  bottom: 0;
+  left: 0;
+}
+/* Floating */
+.float-l {
   float: left;
 }
-/* Float element right */
-.right {
+.float-r {
   float: right;
 }
 /** Centering **/
@@ -317,9 +361,6 @@ a {
   text-align: center;
 }
 /** Padding **/
-.pad-top-1 {
-  padding-top: 1rem;
-}
 .no-pad {
   padding: 0;
 }
@@ -343,10 +384,24 @@ a {
   padding-top: 0;
   padding-bottom: 0;
 }
-/** Height */
-.height-three {
-  height: 3rem;
+.kill-pad {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+/* Styles */
+.hero {
+  height: 30rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.hero .headline {
+  text-align: center;
+  font-size: 3rem;
+}
+/* .hero */
 .menu {
   color: #2c2f3e;
 }
@@ -469,27 +524,35 @@ img.small {
   height: 3rem;
 }
 /** Breakpoint-specific styles */
-/* Small screens (384px) */
-@media all and (max-width: 24rem) {
-  .container {
-    margin-top: 2rem;
-  }
+/* Desktops and laptops */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
 }
-/* Medium screens (640px) */
-@media all and (max-width: 46.8rem) {
-  .container {
-    margin-top: 2rem;
-  }
+/* Large Screens */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }
-/* Large screens (800px) */
-@media all and (max-width: 50rem) {
-  .container {
-    margin-top: 2rem;
-  }
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
 }
-/* X-Large screens (1024px) */
-@media all and (min-width: 73rem) {
-  .container {
-    margin-top: 2rem;
-  }
+/* iPads (portrait) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* iPads (landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (portrait)  */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* Smartphones (landscape) */
+@media only screen and (min-width: 321px) {
+  /* Styles */
 }
