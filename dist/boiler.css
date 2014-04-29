@@ -163,6 +163,7 @@ body {
   height: 100%;
   width: 100%;
   /* Set letter spacing for better readability */
+  font-size: 16px;
   letter-spacing: 0.05rem;
   /* Set font style */
   font: 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -224,6 +225,36 @@ body {
 /* Remove decoration from links */
 a {
   text-decoration: none;
+}
+p {
+  font-size: 1.5rem;
+}
+.header-margin {
+  margin: 1.5rem 0;
+}
+h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+h2 {
+  font-size: 2.7rem;
+  margin: 1.5rem 0;
+}
+h3 {
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
+}
+h4 {
+  font-size: 2.1rem;
+  margin: 1.5rem 0;
+}
+h5 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}
+h6 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
 }
 .row {
   margin: 0;
@@ -395,7 +426,7 @@ a {
   height: 30rem;
   border: 1px solid #ccc;
   padding: 2rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .hero .headline {
   text-align: center;
@@ -450,8 +481,6 @@ a {
   padding: 0.8rem 1rem;
 }
 .boiler-form-element {
-  padding: 0.3rem;
-  width: 15rem;
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
   -moz-appearance: none;
@@ -460,30 +489,36 @@ a {
 }
 .boiler-form input[type="text"],
 .boiler-form input[type="password"] {
-  padding: 0.3rem;
-  width: 15rem;
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  width: 15rem;
+  padding: 0.3rem;
   border: 1px solid #ccc;
 }
-.boiler-form button {
-  padding: 0.3rem;
-  width: 15rem;
+.boiler-form input[type=checkbox] {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 15px;
+}
+.boiler-form button,
+.boiler-form input[type="submit"] {
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   border: none;
-}
-.boiler-form button.go {
+  padding: 0.3rem 0.5rem;
   letter-spacing: 0.05rem;
+  font-size: 1.2rem;
   color: white;
-  font-weight: 700;
-  background-color: #ff823d;
+  cursor: pointer;
 }
 .social-button {
   clear: both;
