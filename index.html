@@ -5,14 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="dist/boiler.css">
+	<style type="text/css" media="screen">	
+		.columns .col-10 { border: 1px solid black; height: 20rem; }
+		.columns .col-20 { border: 1px solid black; height: 20rem; }
+		.columns .col-30 { border: 1px solid black; height: 20rem; }
+		.columns .col-40 { border: 1px solid black; height: 20rem; }
+	</style>
 </head>
-<body>
+<body id="head">
 	<div id="container" class="relative">
 		<nav class="menu horizontal fix t-l full" role="navigation">
-			<a href="#">Home</a>
+			<a href="#head">Home</a>
 			<a href="#forms">Forms</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
+			<a href="#columns">Columns</a>
 			<div class="no-v-pad float-r dropdown">
 				<img class="inline small no-pad" src="images/mocks/user.png" alt="user's picture">
 				<a class="inline pad-top-1 height-three" href="#">John Doe</a>
@@ -24,10 +29,13 @@
 		</nav>
 		<section class="hero">
 			<section class="headline">
-				<h1>Hello World</h1>
+				<h1>Hello, I'm Boiler CSS</h1>
+				<p>
+					I was made by <a href="http://twitter.com/cjponti" title="theponti twitter">@cjponti</a>. He hated added the same styles over and over again to all of his projects so he decided to put all the best practices into one easy to use, portable framework.
+				</p>
 			</section>
 		</section>
-		<section class="hero forms center-text">
+		<section class="hero forms center-text" id="forms">
 			<h1>Forms</h1>
 			<form class="boiler-form">
 				<section>
@@ -45,6 +53,15 @@
 					<button type="reset">type="reset"</button>
 				</section>
 			</form>
+		</section>
+		<section class="hero center-text" id="columns">
+			<h1>The Grid</h1>
+			<section class="columns row">
+				<div class="col-10"></div>
+				<div class="col-20"></div>
+				<div class="col-30"></div>
+				<div class="col-30"></div>
+			</section>
 		</section>
 	</div>
 </body>
