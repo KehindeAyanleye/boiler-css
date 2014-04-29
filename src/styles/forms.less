@@ -1,27 +1,38 @@
 .boiler-form-element {
-	padding: 0.3rem;
-	width: 15rem;
-	margin: 0.3rem 0.3rem;
-	border-radius: @border-radius;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
+    margin: 0.3rem 0.3rem;
+    border-radius: @border-radius;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .boiler-form {
-	input[type="text"],
-	input[type="password"] {
-		.boiler-form-element;
-		border: 1px solid #ccc;
-	}
-	button {
-		.boiler-form-element;
-		border: none;
-	}
-	button.go {
-		letter-spacing: 0.05rem;
-		color: white;
-		font-weight: 700;
-		background-color: @orange;
-	}
+    input[type="text"],
+    input[type="password"] {
+        .boiler-form-element;
+        width: 15rem;
+        padding: 0.3rem;
+        border: 1px solid #ccc;
+    }
+    input[type=checkbox] {
+        // display: none;
+        // &:before {
+            content: "\2713";
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+            font-size: 15px;  
+            color: #f3f3f3;  
+            text-align: center;  
+            line-height: 15px;  
+        // }
+    }
+    button,
+    input[type="submit"] {
+        .boiler-form-element;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        letter-spacing: 0.05rem;
+        font-size: 1.2rem;
+        color: white;
+        cursor: pointer;
+    }
 }
