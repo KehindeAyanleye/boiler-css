@@ -482,7 +482,7 @@ h6 {
   display: block;
   padding: 0.8rem 1rem;
 }
-.boiler-form-element {
+.blr-field {
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
   -moz-appearance: none;
@@ -497,7 +497,8 @@ h6 {
   -webkit-appearance: none;
   appearance: none;
   width: 15rem;
-  padding: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
   border: 1px solid #ccc;
 }
 .boiler-form input[type=checkbox] {
@@ -521,6 +522,12 @@ h6 {
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
+}
+.boiler-form input:focus {
+  outline: none;
+}
+.boiler-form input.field-2x {
+  width: 30rem;
 }
 .social-button {
   clear: both;
