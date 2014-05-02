@@ -434,23 +434,25 @@ h6 {
 }
 /* .hero */
 .menu {
-  color: #2c2f3e;
+  color: #000000;
 }
 .menu a {
-  color: #2c2f3e;
+  color: #000000;
 }
-.menu * {
-  overflow: hidden;
+.menu:after {
+  content: ' ';
+  display: table;
+  zoom: 1;
 }
 .menu > * {
   padding: 1rem;
   background-color: #ffffff;
 }
 .menu > *:hover {
-  background-color: #7fc1ea;
+  background-color: #ffffff;
 }
 .menu > *:hover a {
-  color: #ffffff;
+  color: #000000;
 }
 .menu .brand {
   padding: 0.9rem 1rem;

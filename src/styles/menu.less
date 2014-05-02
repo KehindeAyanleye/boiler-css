@@ -1,52 +1,44 @@
 .menu {
-	color: @menu-text-color;
+  color: @menu-text-color;
 
-	a {
-		color: @menu-link-color;
-	}
-	
-	& * {
-		overflow: hidden;
-	}
+  a { color: @menu-link-color; }
 
-	& > * {
-		padding: 1rem;
-		background-color: @menu-column-background;
-	}
-	
-	& > *:hover {
-		background-color: @menu-column-hover-background;
-		a {
-			color: @menu-link-hover-color;
-		}
-	}
+  &:after {
+    content: ' ';
+    display: table;
+    zoom: 1;
+  }
 
-	.brand {
-		padding: 0.9rem 1rem;
-		font-size: 1.5rem;
-	}
-	
-	.no-h-pad { .no-h-pad; }
-	.no-v-pad { .no-v-pad; }
+  & > * {
+    padding: 1rem;
+    background-color: @menu-column-background;
+  }
+
+  & > *:hover {
+    background-color: @menu-column-hover-background;
+    a { color: @menu-link-hover-color; }
+  }
+
+  .brand {
+    padding: 0.9rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .no-h-pad { .no-h-pad; }
+  .no-v-pad { .no-v-pad; }
 
 } /* menu */
 
-.horizontal {
-	& > * {
-		display: inline-block;
-	}
-}
+.horizontal > * { display: inline-block; }
 
 /* Dropdown menu */
-.dropdown:hover > .dropdown-menu {
-	display: block;
-}
+.dropdown:hover > .dropdown-menu { display: block; }
 
 .dropdown-menu {
-	display: none;
-	text-align: center;
-	& > * {
-		display: block;
-		padding: 0.8rem 1rem;
-	}
+  display: none;
+  text-align: center;
+  & > * {
+    display: block;
+    padding: 0.8rem 1rem;
+  }
 }
