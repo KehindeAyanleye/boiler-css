@@ -573,7 +573,7 @@ img.small {
   /* Styles */
 }
 /* Large Screens */
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 114rem) {
   /* Styles */
 }
 /* iPads (portrait and landscape) */
@@ -589,14 +589,14 @@ img.small {
   /* Styles */
 }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 20rem) and (max-device-width: 30rem) {
   /* Styles */
 }
 /* Smartphones (portrait)  */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 20rem) {
   /* Styles */
 }
 /* Smartphones (landscape) */
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 20rem) {
   /* Styles */
 }
