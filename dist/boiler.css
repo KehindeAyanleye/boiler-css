@@ -569,7 +569,7 @@ img.small {
 }
 /** Breakpoint-specific styles */
 /* Desktops and laptops */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 76.5rem) {
   /* Styles */
 }
 /* Large Screens */
@@ -577,15 +577,15 @@ img.small {
   /* Styles */
 }
 /* iPads (portrait and landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) {
   /* Styles */
 }
 /* iPads (portrait) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
   /* Styles */
 }
 /* iPads (landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
   /* Styles */
 }
 /* Smartphones (portrait and landscape) */
