@@ -3,12 +3,6 @@
 
   a { color: @menu-link-color; }
 
-  &:after {
-    content: ' ';
-    display: table;
-    zoom: 1;
-  }
-
   & > * {
     padding: 1rem;
     background-color: @menu-column-background;
@@ -24,21 +18,16 @@
     font-size: 1.5rem;
   }
 
-  .no-h-pad { .no-h-pad; }
-  .no-v-pad { .no-v-pad; }
-
-} /* menu */
-
-.horizontal > * { display: inline-block; }
+}
 
 /* Dropdown menu */
-.dropdown:hover > .dropdown-menu { display: block; }
+.dropdown:hover > .dropdown-menu { .block; }
 
 .dropdown-menu {
   display: none;
   text-align: center;
   & > * {
-    display: block;
+    .block;
     padding: 0.8rem 1rem;
   }
 }

@@ -86,13 +86,12 @@ a {
 .row > * {
   display: inline-block;
 }
-/* row */
 /* Columns */
 .col {
   display: inline-block;
   padding: 1rem;
 }
-/* rol */
+/* Column Sizes */
 .col-10 {
   width: 10%;
 }
@@ -148,6 +147,7 @@ a {
 .push-9 {
   left: 90%;
 }
+/* Widths */
 .full {
   width: 100%;
 }
@@ -254,11 +254,6 @@ a {
 .menu a {
   color: #000000;
 }
-.menu:after {
-  content: ' ';
-  display: table;
-  zoom: 1;
-}
 .menu > * {
   padding: 1rem;
   background-color: #ffffff;
@@ -272,18 +267,6 @@ a {
 .menu .brand {
   padding: 0.9rem 1rem;
   font-size: 1.5rem;
-}
-.menu .no-h-pad {
-  padding-left: 0;
-  padding-right: 0;
-}
-.menu .no-v-pad {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-/* menu */
-.horizontal > * {
-  display: inline-block;
 }
 /* Dropdown menu */
 .dropdown:hover > .dropdown-menu {
