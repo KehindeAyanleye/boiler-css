@@ -490,7 +490,8 @@ h6 {
   appearance: none;
 }
 .boiler-form input[type="text"],
-.boiler-form input[type="password"] {
+.boiler-form input[type="password"],
+.boiler-form textarea {
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
   -moz-appearance: none;
