@@ -1,6 +1,6 @@
 .blr-field {
   margin: 0.3rem 0.3rem;
-  border-radius: @border-radius;
+  border-radius: 0.2rem;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -8,6 +8,7 @@
 
 .boiler-form {
 
+  input,
   input[type="text"],
   input[type="password"],
   textarea {
@@ -16,15 +17,6 @@
     padding: 0.2rem 0.5rem;
     font-size: 1.2rem;
     border: 1px solid #ccc;
-  }
-
-  input[type=checkbox] {
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 15px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 15px;
   }
 
   button,
@@ -42,6 +34,9 @@
     outline: none;
   }
 
-  input.field-2x { width: 30rem }
+  input.field-2x,
+  textarea.field-2x {
+    width: 30rem
+  }
 
 }

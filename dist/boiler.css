@@ -1,7 +1,4 @@
 /** Helpers */
-/******************
- * Colors
- ******************/
 /**
  * This adds a solid black border to elements, which comes in handy for
  * wireframing a site
@@ -10,7 +7,7 @@
   border: 2px solid black;
 }
 /******************
- * Styles
+ * Colors
  ******************/
 /******************
  * Fonts
@@ -19,7 +16,7 @@
  * Breakpoints
  ******************/
 /******************
- * Other
+ * Styles
  ******************/
 /** SMACSS File Layout */
 html,
@@ -89,30 +86,48 @@ a {
 }
 /* Column Sizes */
 .col-10 {
+  display: inline-block;
+  padding: 1rem;
   width: 10%;
 }
 .col-20 {
+  display: inline-block;
+  padding: 1rem;
   width: 20%;
 }
 .col-30 {
+  display: inline-block;
+  padding: 1rem;
   width: 30%;
 }
 .col-40 {
+  display: inline-block;
+  padding: 1rem;
   width: 40%;
 }
 .col-50 {
+  display: inline-block;
+  padding: 1rem;
   width: 50%;
 }
 .col-60 {
+  display: inline-block;
+  padding: 1rem;
   width: 60%;
 }
 .col-70 {
+  display: inline-block;
+  padding: 1rem;
   width: 70%;
 }
 .col-80 {
+  display: inline-block;
+  padding: 1rem;
   width: 80%;
 }
 .col-90 {
+  display: inline-block;
+  padding: 1rem;
   width: 90%;
 }
 /* Push element */
@@ -287,6 +302,7 @@ a {
   -webkit-appearance: none;
   appearance: none;
 }
+.boiler-form input,
 .boiler-form input[type="text"],
 .boiler-form input[type="password"],
 .boiler-form textarea {
@@ -299,14 +315,6 @@ a {
   padding: 0.2rem 0.5rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
-}
-.boiler-form input[type=checkbox] {
-  content: "\2713";
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 15px;
-  color: #f3f3f3;
-  text-align: center;
-  line-height: 15px;
 }
 .boiler-form button,
 .boiler-form input[type="submit"] {
@@ -325,7 +333,8 @@ a {
 .boiler-form input:focus {
   outline: none;
 }
-.boiler-form input.field-2x {
+.boiler-form input.field-2x,
+.boiler-form textarea.field-2x {
   width: 30rem;
 }
 .social-button {

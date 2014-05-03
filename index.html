@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title></title>
     <link rel="stylesheet" href="dist/boiler.css">
     <style type="text/css" media="screen">
-        .columns .col-10 { border: 1px solid black; height: 20rem; }
-        .columns .col-20 { border: 1px solid black; height: 20rem; }
-        .columns .col-30 { border: 1px solid black; height: 20rem; }
-        .columns .col-40 { border: 1px solid black; height: 20rem; }
+        #columns .row > * { border: 1px solid black; height: 20rem; }
     </style>
 </head>
 <body id="head">
@@ -24,9 +22,9 @@
             <div class="col">
                 <a href="#columns">Columns</a>
             </div>
-            <div class="col no-v-pad dropdown">
-                <img class="inline small no-pad" src="images/mocks/user.png" alt="user's picture">
-                <a class="inline pad-top-1 height-three" href="#">John Doe</a>
+            <div class="col dropdown">
+                <img class="inline small" src="images/mocks/user.png" alt="user's picture">
+                <a class="inline" href="#">John Doe</a>
                 <div class="dropdown-menu">
                     <a href="#">Profile</a>
                     <a href="#">Log Out</a>
@@ -62,7 +60,7 @@
         </section>
         <section class="hero center-text" id="columns">
             <h1>The Grid</h1>
-            <section class="columns row">
+            <section class="row">
                 <div class="col-10"></div>
                 <div class="col-20"></div>
                 <div class="col-30"></div>
