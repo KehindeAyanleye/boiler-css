@@ -28,10 +28,9 @@ body {
   height: 100%;
   width: 100%;
   /* Set letter spacing for better readability */
-  font-size: 16px;
   letter-spacing: 0.05rem;
   /* Set font style */
-  font: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font: 16px "Helvetica Neue", Helvetica, sans-serif;
 }
 /**
     Enable border-box box-sizing. This will contain the padding and
