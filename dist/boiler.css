@@ -302,7 +302,6 @@ a {
   -webkit-appearance: none;
   appearance: none;
 }
-.boiler-form input,
 .boiler-form input[type="text"],
 .boiler-form input[type="password"],
 .boiler-form textarea {
