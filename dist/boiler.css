@@ -73,6 +73,13 @@ body {
 a {
   /* Remove decoration from links */
   text-decoration: none;
+  /* Main <a> color for document */
+  color: #000000;
+  /*
+    Add font-weight to differentiate between links and
+    plain text.
+  */
+  font-weight: 600;
 }
 p {
   /* Add space below paragraph for better readability */
@@ -297,7 +304,6 @@ p {
 }
 .dropdown-menu > * {
   display: block;
-  padding: 0.8rem 1rem;
 }
 .blr-field {
   margin: 0.3rem 0.3rem;
