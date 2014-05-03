@@ -1,132 +1,3 @@
-/** Reset file */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 /** Helpers */
 /******************
  * Colors
@@ -151,15 +22,9 @@ table {
  * Other
  ******************/
 /** SMACSS File Layout */
-html {
-  font-size: 100%;
-  height: 100%;
-  position: relative;
-}
+html,
 body {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* Force body to be size of viewport */
   height: 100%;
   width: 100%;
   /* Set letter spacing for better readability */
@@ -169,50 +34,37 @@ body {
   font: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 /**
- * Enable border-box box-sizing. This will contain the padding and border
- * within the set width of an element. The margin will be outside the width.
+    Enable border-box box-sizing. This will contain the padding and
+    border within the set width of an element. The margin will be
+    outside the width.
  */
 *,
-*:before,
-*:after {
+:before,
+:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/**
- * Kill margins added in Webkit browers
- */
 * {
+  /** Increase line height for better readability */
   line-height: 1.5;
+  /** Smooth out fonts */
   -webkit-font-smoothing: antialiased;
+  /* Kill margins added in Webkit browers */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
 }
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
+/* clearfix */
+.cf {
   content: " ";
   display: table;
-}
-.cf:after {
-  clear: both;
-}
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
+  /*
+      For IE 6/7 only,
+      Include this rule to trigger hasLayout and contain floats.
+   */
   *zoom: 1;
 }
 /* Set style for page parent container */
@@ -225,36 +77,6 @@ body {
 /* Remove decoration from links */
 a {
   text-decoration: none;
-}
-p {
-  font-size: 1.5rem;
-}
-.header-margin {
-  margin: 1.5rem 0;
-}
-h1 {
-  font-size: 3rem;
-  margin: 1.5rem 0;
-}
-h2 {
-  font-size: 2.7rem;
-  margin: 1.5rem 0;
-}
-h3 {
-  font-size: 2.4rem;
-  margin: 1.5rem 0;
-}
-h4 {
-  font-size: 2.1rem;
-  margin: 1.5rem 0;
-}
-h5 {
-  font-size: 1.8rem;
-  margin: 1.5rem 0;
-}
-h6 {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
 }
 .row {
   margin: 0;
