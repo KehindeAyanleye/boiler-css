@@ -21,9 +21,13 @@
 }
 
 /* Dropdown menu */
-.dropdown:hover > .dropdown-menu { .block; }
+.dropdown {
+  position: relative;
+  &:hover > .dropdown-menu { .block; }
+}
 
 .dropdown-menu {
+  position: absolute;
   display: none;
   text-align: center;
   & > * {

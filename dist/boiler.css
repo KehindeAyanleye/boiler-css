@@ -83,9 +83,6 @@ a {
   padding: 0;
   width: 100%;
 }
-.row > * {
-  display: inline-block;
-}
 /* Columns */
 .col {
   display: inline-block;
@@ -269,10 +266,14 @@ a {
   font-size: 1.5rem;
 }
 /* Dropdown menu */
+.dropdown {
+  position: relative;
+}
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
 .dropdown-menu {
+  position: absolute;
   display: none;
   text-align: center;
 }
