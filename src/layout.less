@@ -1,36 +1,23 @@
+/*
+  Styles for an element that will contain a inline row of
+  elements.
+ */
 .row {
   margin:  0;
-  padding: 0;
+  padding: 0 1%;
   width:   100%;
 }
 
-/* Columns */
+/*
+  Basic column styles. Column sizes can be found in their
+  respective breakpoint files
+ */
 .col {
   display: inline-block;
-  padding: 1rem;
+  padding: 0 1%;
+  &:first-child { padding-left: 0; }
+  &:last-child { padding-right: 0; }
 }
-
-/* Column Sizes */
-.col-10 { .col; width: 10%; }
-.col-20 { .col; width: 20%; }
-.col-30 { .col; width: 30%; }
-.col-40 { .col; width: 40%; }
-.col-50 { .col; width: 50%; }
-.col-60 { .col; width: 60%; }
-.col-70 { .col; width: 70%; }
-.col-80 { .col; width: 80%; }
-.col-90 { .col; width: 90%; }
-
-/* Push element */
-.push-1 { left: 10% }
-.push-2 { left: 20% }
-.push-3 { left: 30% }
-.push-4 { left: 40% }
-.push-5 { left: 50% }
-.push-6 { left: 60% }
-.push-7 { left: 70% }
-.push-8 { left: 80% }
-.push-9 { left: 90% }
 
 /* Widths */
 .full { width: 100%; }

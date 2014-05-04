@@ -85,89 +85,28 @@ p {
   /* Add space below paragraph for better readability */
   margin-bottom: 0.8rem;
 }
+/*
+  Styles for an element that will contain a inline row of
+  elements.
+ */
 .row {
   margin: 0;
-  padding: 0;
+  padding: 0 1%;
   width: 100%;
 }
-/* Columns */
+/*
+  Basic column styles. Column sizes can be found in their
+  respective breakpoint files
+ */
 .col {
   display: inline-block;
-  padding: 1rem;
+  padding: 0 1%;
 }
-/* Column Sizes */
-.col-10 {
-  display: inline-block;
-  padding: 1rem;
-  width: 10%;
+.col:first-child {
+  padding-left: 0;
 }
-.col-20 {
-  display: inline-block;
-  padding: 1rem;
-  width: 20%;
-}
-.col-30 {
-  display: inline-block;
-  padding: 1rem;
-  width: 30%;
-}
-.col-40 {
-  display: inline-block;
-  padding: 1rem;
-  width: 40%;
-}
-.col-50 {
-  display: inline-block;
-  padding: 1rem;
-  width: 50%;
-}
-.col-60 {
-  display: inline-block;
-  padding: 1rem;
-  width: 60%;
-}
-.col-70 {
-  display: inline-block;
-  padding: 1rem;
-  width: 70%;
-}
-.col-80 {
-  display: inline-block;
-  padding: 1rem;
-  width: 80%;
-}
-.col-90 {
-  display: inline-block;
-  padding: 1rem;
-  width: 90%;
-}
-/* Push element */
-.push-1 {
-  left: 10%;
-}
-.push-2 {
-  left: 20%;
-}
-.push-3 {
-  left: 30%;
-}
-.push-4 {
-  left: 40%;
-}
-.push-5 {
-  left: 50%;
-}
-.push-6 {
-  left: 60%;
-}
-.push-7 {
-  left: 70%;
-}
-.push-8 {
-  left: 80%;
-}
-.push-9 {
-  left: 90%;
+.col:last-child {
+  padding-right: 0;
 }
 /* Widths */
 .full {
@@ -265,10 +204,18 @@ p {
   border: 1px solid #ccc;
   padding: 2rem;
   margin: 2rem auto;
+  /* Remove margin-top from first hero unit */
+  /* Remove margin-bottom from last hero unit */
 }
 .hero .headline {
   text-align: center;
   font-size: 3rem;
+}
+.hero .hero:first-child {
+  margin-top: 0;
+}
+.hero .hero:last-child-child {
+  margin-bottom: 0;
 }
 .menu {
   color: #000000;
@@ -387,15 +334,102 @@ img.small {
 /** Breakpoint-specific styles */
 /* Desktops and laptops */
 @media only screen and (min-width: 76.5rem) {
-  /* Styles */
+  /* Columns */
+  .col.lg-10 {
+    width: 10%;
+  }
+  .col.lg-20 {
+    width: 20%;
+  }
+  .col.lg-30 {
+    width: 30%;
+  }
+  .col.lg-40 {
+    width: 40%;
+  }
+  .col.lg-50 {
+    width: 50%;
+  }
+  .col.lg-60 {
+    width: 60%;
+  }
+  .col.lg-70 {
+    width: 70%;
+  }
+  .col.lg-80 {
+    width: 80%;
+  }
+  .col.lg-90 {
+    width: 90%;
+  }
+  .col.lg-100 {
+    width: 100%;
+  }
 }
 /* Large Screens */
 @media only screen and (min-width: 114rem) {
-  /* Styles */
+  /* Columns */
+  .col.xl-10 {
+    width: 10%;
+  }
+  .col.xl-20 {
+    width: 20%;
+  }
+  .col.xl-30 {
+    width: 30%;
+  }
+  .col.xl-40 {
+    width: 40%;
+  }
+  .col.xl-50 {
+    width: 50%;
+  }
+  .col.xl-60 {
+    width: 60%;
+  }
+  .col.xl-70 {
+    width: 70%;
+  }
+  .col.xl-80 {
+    width: 80%;
+  }
+  .col.xl-90 {
+    width: 90%;
+  }
+  .col.xl-100 {
+    width: 100%;
+  }
 }
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) {
-  /* Styles */
+  /* Columns */
+  .col.md-10 {
+    width: 10%;
+  }
+  .col.md-20 {
+    width: 20%;
+  }
+  .col.md-30 {
+    width: 30%;
+  }
+  .col.md-40 {
+    width: 40%;
+  }
+  .col.md-50 {
+    width: 50%;
+  }
+  .col.md-60 {
+    width: 60%;
+  }
+  .col.md-70 {
+    width: 70%;
+  }
+  .col.md-80 {
+    width: 80%;
+  }
+  .col.md-90 {
+    width: 90%;
+  }
 }
 /* iPads (portrait) */
 @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
@@ -406,18 +440,51 @@ img.small {
   /* Styles */
 }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 20rem) and (max-device-width: 30rem) {
-  /* Styles */
+@media only screen and (min-width: 20rem) and (max-width: 30rem) {
+  /* Columns */
+  .col.sm-10 {
+    width: 10%;
+  }
+  .col.sm-20 {
+    width: 20%;
+  }
+  .col.sm-30 {
+    width: 30%;
+  }
+  .col.sm-40 {
+    width: 40%;
+  }
+  .col.sm-50 {
+    width: 50%;
+  }
+  .col.sm-60 {
+    width: 60%;
+  }
+  .col.sm-70 {
+    width: 70%;
+  }
+  .col.sm-80 {
+    width: 80%;
+  }
+  .col.sm-90 {
+    width: 90%;
+  }
+  .col.sm-100 {
+    width: 100%;
+  }
 }
 /* Smartphones (portrait)  */
 @media only screen and (max-width: 30rem) {
   /*
     For rows that are meant to be collapsed on small devices.
-  */
+   */
   .row.sm-collapse {
     /*
-      On hover,
-    */
+      On small devices, hide all siblings of trigger.
+     */
+    /*
+      On hover, display all first children of .sm-collapse.
+     */
   }
   .row.sm-collapse > * {
     display: block;

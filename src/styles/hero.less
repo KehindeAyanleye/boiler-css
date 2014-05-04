@@ -1,12 +1,16 @@
 .hero {
-	height: 30rem;
-	border: 1px solid #ccc;
-	padding: 2rem;
-	margin: 2rem auto;
+  height: 30rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin: 2rem auto;
 
-	.headline {
-		text-align: center;
-		font-size: 3rem;
-	}
+  .headline {
+      text-align: center;
+      font-size: 3rem;
+  }
 
+  /* Remove margin-top from first hero unit */
+  .hero:first-child { margin-top: 0; }
+  /* Remove margin-bottom from last hero unit */
+  .hero:last-child-child { margin-bottom: 0; }
 }
