@@ -410,8 +410,29 @@ img.small {
   /* Styles */
 }
 /* Smartphones (portrait)  */
-@media only screen and (max-width: 20rem) {
-  /* Styles */
+@media only screen and (max-width: 30rem) {
+  /*
+    For rows that are meant to be collapsed on small devices.
+  */
+  .row.sm-collapse {
+    /*
+      On hover,
+    */
+  }
+  .row.sm-collapse > * {
+    display: block;
+    text-align: center;
+  }
+  .row.sm-collapse .trigger ~ * {
+    display: none;
+  }
+  .row.sm-collapse:hover > * {
+    display: block;
+  }
+  .dropdown > * {
+    left: 0;
+    width: 100%;
+  }
 }
 /* Smartphones (landscape) */
 @media only screen and (min-width: 20rem) {

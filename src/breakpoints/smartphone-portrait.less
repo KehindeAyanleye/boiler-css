@@ -1,5 +1,36 @@
 /* Smartphones (portrait)  */
 @media only screen
-and (max-width: @phone-min-width) {
-  /* Styles */
+and (max-width: @phone-max-width) {
+
+  /*
+    For rows that are meant to be collapsed on small devices.
+   */
+  .row.sm-collapse {
+    & > * {
+      .block;
+      .txt-center;
+    }
+
+    /*
+      On small devices, hide all siblings of trigger.
+     */
+    .trigger ~ * {
+      display: none;
+    }
+
+    /*
+      On hover, display all first children of .sm-collapse.
+     */
+    &:hover > * {
+      .block;
+    }
+  }
+
+  .dropdown {
+    & > * {
+      left: 0;
+      width: 100%;
+    }
+  }
+
 }

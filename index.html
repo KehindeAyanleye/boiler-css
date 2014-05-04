@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Boiler.css</title>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="dist/boiler.css">
     <style type="text/css" media="screen">
         #columns .row > * { border: 1px solid black; height: 20rem; }
@@ -13,8 +18,8 @@
 </head>
 <body id="head">
     <div id="container" class="relative">
-        <nav class="row fix t-l" role="navigation">
-            <div class="col">
+        <nav class="row fix t-l sm-collapse" role="navigation">
+            <div class="col trigger">
                 <a href="#head">Home</a>
             </div>
             <div class="col">
@@ -26,8 +31,12 @@
             <div class="col dropdown">
                 <a href="#">Dropdown Menu</a>
                 <div class="dropdown-menu">
-                    <a href="#">Dropdown Link</a>
-                    <a href="#">Dropdown Link</a>
+                    <div class="">
+                        <a href="#">Dropdown Link</a>
+                    </div>
+                    <div class="">
+                        <a href="#">Dropdown Link</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -43,9 +52,9 @@
                     </a>
                 </p>
                 <p>
-                    He hated added the same styles over and over again to all
+                    He hated writing the same styles over and over again to all
                     of his projects so he decided to put all the best practices
-                    into one easy to use, portable framework.
+                    into one easy-to-use, portable framework.
                 </p>
             </section>
         </section>
