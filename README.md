@@ -37,34 +37,11 @@ $ git clone https://github.com/theponti/boiler-css.git
 $ npm install
 
 $ gulp
-    /**
-     * Will start a static server on port 4000 and will
-     * start a gulp.watch task for all .less files in src
-     * directory
-     */
-```
-
-## Usage
-
-### Navigation Bar
-
-![Fixed Top Navigation Bar](./images/nav_bar.png)
-
-```html
-        <nav class="menu horizontal fixed-top full" role="navigation">
-            <a href="#">Home</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <div class="no-v-pad right dropdown">
-                <img class="inline small no-pad" src="mocks/images/user.png" alt="user's picture">
-                <a class="inline pad-top-1 height-three" href="#">John Doe</a>
-                <div class="dropdown-menu">
-                    <a href="#">Profile</a>
-                    <a href="#">Log Out</a>
-                </div>
-            </div>
-        </nav>
+/**
+ * This will start a static server on port 4000 and will
+ * start a gulp.watch task for all .less files in src
+ * directory
+ */
 ```
 
 ## Now Rock Out!
