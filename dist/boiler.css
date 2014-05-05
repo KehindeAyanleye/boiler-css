@@ -343,7 +343,7 @@ img.small {
 }
 /** Breakpoint-specific styles */
 /* Desktops and laptops */
-@media only screen and (min-width: 76.5rem) {
+@media only screen and (min-width: 64rem) {
   /* Columns */
   .col.lg-10 {
     width: §          9.98%;
@@ -423,7 +423,7 @@ img.small {
   }
 }
 /* Tablets (portrait and landscape) */
-@media only screen and (min-width: 48rem) and (max-width: 76.5rem) {
+@media only screen and (min-width: 30rem) and (max-width: 76.5rem) {
   /* Columns */
   .col.md-10 {
     width: §          9.98%;
@@ -483,11 +483,11 @@ img.small {
   }
 }
 /* Tablet (portrait) */
-@media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
+@media only screen and (min-width: 30rem) and (max-width: 76.5rem) and (orientation: portrait) {
   /* Styles */
 }
 /* Tablets (landscape) */
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+@media only screen and (min-width: 30rem) and (max-width: 48rem) and (orientation: landscape) {
   /* Styles */
 }
 /* Phones (portrait and landscape) */
@@ -551,7 +551,7 @@ img.small {
   }
 }
 /* Phones (portrait)  */
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 48rem) and (orientation: portrait) {
   /*
     For rows that are meant to be collapsed on small devices.
    */
@@ -579,6 +579,6 @@ img.small {
   }
 }
 /* Phones (landscape) */
-@media only screen and (min-width: 20rem) {
+@media only screen and (min-width: 20rem) and (min-width: 48rem) and (orientation: landscape) {
   /* Styles */
 }
