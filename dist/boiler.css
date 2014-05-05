@@ -246,6 +246,7 @@ p {
 .menu.vertical.group:first-child {
   border-top: 1px solid #ccc;
 }
+/* .menu */
 /* Dropdown menu */
 .dropdown {
   position: relative;
@@ -421,107 +422,135 @@ img.small {
     width: 100%;
   }
 }
-/* iPads (portrait and landscape) */
+/* Tablets (portrait and landscape) */
 @media only screen and (min-width: 48rem) and (max-width: 76.5rem) {
   /* Columns */
   .col.md-10 {
     width: §          9.98%;
+    max-width: 76.5rem;
   }
   .col.md-20 {
     width: 19.98%;
+    max-width: 76.5rem;
   }
   .col.md-25 {
     width: 24.98%;
+    max-width: 76.5rem;
   }
   .col.md-30 {
     width: 29.98%;
+    max-width: 76.5rem;
   }
   .col.md-33 {
     width: 33.33%;
+    max-width: 76.5rem;
   }
   .col.md-40 {
     width: 40%;
+    max-width: 76.5rem;
   }
   .col.md-50 {
     width: 49.98%;
+    max-width: 76.5rem;
   }
   .col.md-60 {
     width: 59.98%;
+    max-width: 76.5rem;
   }
   .col.md-66 {
     width: 66.66%;
+    max-width: 76.5rem;
   }
   .col.md-70 {
     width: 69.96%;
+    max-width: 76.5rem;
   }
   .col.md-75 {
     width: 74.98%;
+    max-width: 76.5rem;
   }
   .col.md-80 {
     width: 79.98%;
+    max-width: 76.5rem;
   }
   .col.md-90 {
     width: 89.98%;
+    max-width: 76.5rem;
   }
   .col.md-100 {
     width: 99.98%;
+    max-width: 76.5rem;
   }
 }
-/* iPads (portrait) */
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
+/* Tablet (portrait) */
+@media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
   /* Styles */
 }
-/* iPads (landscape) */
+/* Tablets (landscape) */
 @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
   /* Styles */
 }
-/* Smartphones (portrait and landscape) */
+/* Phones (portrait and landscape) */
 @media only screen and (min-width: 20rem) and (max-width: 48rem) {
   /* Columns */
   .col.sm-10 {
     width: §          9.98%;
+    max-width: 48rem;
   }
   .col.sm-20 {
     width: 19.98%;
+    max-width: 48rem;
   }
   .col.sm-25 {
     width: 24.98%;
+    max-width: 48rem;
   }
   .col.sm-30 {
     width: 29.98%;
+    max-width: 48rem;
   }
   .col.sm-33 {
     width: 33.33%;
+    max-width: 48rem;
   }
   .col.sm-40 {
     width: 40%;
+    max-width: 48rem;
   }
   .col.sm-50 {
     width: 49.98%;
+    max-width: 48rem;
   }
   .col.sm-60 {
     width: 59.98%;
+    max-width: 48rem;
   }
   .col.sm-66 {
     width: 66.66%;
+    max-width: 48rem;
   }
   .col.sm-70 {
     width: 69.96%;
+    max-width: 48rem;
   }
   .col.sm-75 {
     width: 74.98%;
+    max-width: 48rem;
   }
   .col.sm-80 {
     width: 79.98%;
+    max-width: 48rem;
   }
   .col.sm-90 {
     width: 89.98%;
+    max-width: 48rem;
   }
   .col.sm-100 {
     width: 99.98%;
+    max-width: 48rem;
   }
 }
-/* Smartphones (portrait)  */
+/* Phones (portrait)  */
 @media only screen and (max-width: 30rem) {
   /*
     For rows that are meant to be collapsed on small devices.
@@ -549,7 +578,7 @@ img.small {
     width: 100%;
   }
 }
-/* Smartphones (landscape) */
+/* Phones (landscape) */
 @media only screen and (min-width: 20rem) {
   /* Styles */
 }
