@@ -6,6 +6,15 @@
   margin:  0;
   padding: 0 1%;
   width:   100%;
+  /* Apply clearfix to rows */
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
 }
 
 /*
