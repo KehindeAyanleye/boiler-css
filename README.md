@@ -1,12 +1,15 @@
 # Boiler-CSS
 
 **What is Boiler-CSS?**
+
 * It's another responsive front-end framework.
 * It's like other responsive front-end frameworks, but not.
 * It's written in LESS.
 
 Now, I know what you're going to say...
+
 **AREN'T THERE ENOUGH REPONSIVE FRONT-END FRAMEWORKS ALREADY?!!**
+
 Yes, there absolutely are many to choose from. I didn't decide to
 build this because I think I can do a better job than a bunch of the
 amazing developers at Zurb, Twitter, etc. I decided to build this
@@ -26,22 +29,21 @@ overwriting.
 
 ## Installation
 
-```bash
+```
 bower install boiler-css
 ```
 
 ## Development
-```base
+
+```
 $ git clone https://github.com/theponti/boiler-css.git
 
 $ npm install
 
 $ gulp
-/**
- * This will start a static server on port 4000 and will
- * start a gulp.watch task for all .less files in src
- * directory
- */
 ```
+
+This will start a static server on port 4000 and will start
+a gulp.watch task for all .less files in src directory.
 
 ## Now Rock Out!
