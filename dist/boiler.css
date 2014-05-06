@@ -1,11 +1,21 @@
 /** Helpers */
 /**
-    This adds a solid black border to elements, which
-    comes in handy for wireframing a site.
+ * This adds a solid black border to elements, which
+ * comes in handy for wireframing a site.
  */
-.wireframe {
-  border: 2px solid black;
-}
+/**
+ * Apply clearfix hack
+ */
+/**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+/**
+ * Center element within parent element
+ */
+/**
+ * Determine column and gutter width
+ */
 /******************
  * Colors
  ******************/
@@ -21,9 +31,16 @@
 /******************
  * Widths
  ******************/
+/******************
+ * The Grid
+ ******************/
 /** SMACSS File Layout */
 html,
 body {
+  /* Set font-family to sans-serif because sans-serif rocks */
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   /* Force body to be size of viewport */
   height: 100%;
   width: 100%;
@@ -96,6 +113,15 @@ p {
   margin: 0;
   padding: 0 1%;
   width: 100%;
+  /* Apply clearfix to rows */
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
 }
 /*
   Basic column styles. Column sizes can be found in their
@@ -106,20 +132,20 @@ p {
   padding: 1rem;
 }
 /* Widths */
-.full {
-  width: 100%;
-}
-.two-thirds {
-  width: 66.7%;
-}
-.half {
-  width: 50%;
-}
-.third {
-  width: 33.3%;
-}
 .fourth {
   width: 24.95%;
+}
+.third {
+  width: 33.33%;
+}
+.half {
+  width: 50.00%;
+}
+.two-thirds {
+  width: 66.66%;
+}
+.full {
+  width: 100.00%;
 }
 /* Display */
 .block {
@@ -346,7 +372,7 @@ img.small {
 @media only screen and (min-width: 64rem) {
   /* Columns */
   .col.lg-10 {
-    width: §          9.98%;
+    width: 9.98%;
   }
   .col.lg-20 {
     width: 19.98%;
@@ -391,95 +417,201 @@ img.small {
 /* Large Screens */
 @media only screen and (min-width: 114rem) {
   /* Columns */
+  .col.xl-1 {
+    width: 2400%;
+    margin-right: -Infinity%;
+  }
+  .col.xl-2 {
+    width: 1200%;
+    margin-right: -230000%;
+  }
+  .col.xl-3 {
+    width: 800%;
+    margin-right: -115000%;
+  }
+  .col.xl-4 {
+    width: 600%;
+    margin-right: -76666.66666667%;
+  }
+  .col.xl-5 {
+    width: 480%;
+    margin-right: -57500%;
+  }
+  .col.xl-6 {
+    width: 400%;
+    margin-right: -46000%;
+  }
+  .col.xl-7 {
+    width: 342.85714286%;
+    margin-right: -38333.33333333%;
+  }
+  .col.xl-8 {
+    width: 300%;
+    margin-right: -32857.14285714%;
+  }
+  .col.xl-9 {
+    width: 266.66666667%;
+    margin-right: -28750%;
+  }
   .col.xl-10 {
-    width: 10%;
+    width: 240%;
+    margin-right: -25555.55555556%;
+  }
+  .col.xl-11 {
+    width: 218.18181818%;
+    margin-right: -23000%;
+  }
+  .col.xl-12 {
+    width: 200%;
+    margin-right: -20909.09090909%;
+  }
+  .col.xl-13 {
+    width: 184.61538462%;
+    margin-right: -19166.66666667%;
+  }
+  .col.xl-14 {
+    width: 171.42857143%;
+    margin-right: -17692.30769231%;
+  }
+  .col.xl-15 {
+    width: 160%;
+    margin-right: -16428.57142857%;
+  }
+  .col.xl-16 {
+    width: 150%;
+    margin-right: -15333.33333333%;
+  }
+  .col.xl-17 {
+    width: 141.17647059%;
+    margin-right: -14375%;
+  }
+  .col.xl-18 {
+    width: 133.33333333%;
+    margin-right: -13529.41176471%;
+  }
+  .col.xl-19 {
+    width: 126.31578947%;
+    margin-right: -12777.77777778%;
   }
   .col.xl-20 {
-    width: 20%;
+    width: 120%;
+    margin-right: -12105.26315789%;
   }
-  .col.xl-30 {
-    width: 30%;
+  .col.xl-21 {
+    width: 114.28571429%;
+    margin-right: -11500%;
   }
-  .col.xl-40 {
-    width: 40%;
+  .col.xl-22 {
+    width: 109.09090909%;
+    margin-right: -10952.38095238%;
   }
-  .col.xl-50 {
-    width: 50%;
+  .col.xl-23 {
+    width: 104.34782609%;
+    margin-right: -10454.54545455%;
   }
-  .col.xl-60 {
-    width: 60%;
-  }
-  .col.xl-70 {
-    width: 70%;
-  }
-  .col.xl-80 {
-    width: 80%;
-  }
-  .col.xl-90 {
-    width: 90%;
-  }
-  .col.xl-100 {
+  .col.xl-24 {
     width: 100%;
+    margin-right: -10000%;
   }
 }
 /* Tablets (portrait and landscape) */
 @media only screen and (min-width: 30rem) and (max-width: 76.5rem) {
   /* Columns */
+  .col.md-1 {
+    width: 2400%;
+    margin-right: -Infinity%;
+  }
+  .col.md-2 {
+    width: 1200%;
+    margin-right: -230000%;
+  }
+  .col.md-3 {
+    width: 800%;
+    margin-right: -115000%;
+  }
+  .col.md-4 {
+    width: 600%;
+    margin-right: -76666.66666667%;
+  }
+  .col.md-5 {
+    width: 480%;
+    margin-right: -57500%;
+  }
+  .col.md-6 {
+    width: 400%;
+    margin-right: -46000%;
+  }
+  .col.md-7 {
+    width: 342.85714286%;
+    margin-right: -38333.33333333%;
+  }
+  .col.md-8 {
+    width: 300%;
+    margin-right: -32857.14285714%;
+  }
+  .col.md-9 {
+    width: 266.66666667%;
+    margin-right: -28750%;
+  }
   .col.md-10 {
-    width: §          9.98%;
-    max-width: 76.5rem;
+    width: 240%;
+    margin-right: -25555.55555556%;
+  }
+  .col.md-11 {
+    width: 218.18181818%;
+    margin-right: -23000%;
+  }
+  .col.md-12 {
+    width: 200%;
+    margin-right: -20909.09090909%;
+  }
+  .col.md-13 {
+    width: 184.61538462%;
+    margin-right: -19166.66666667%;
+  }
+  .col.md-14 {
+    width: 171.42857143%;
+    margin-right: -17692.30769231%;
+  }
+  .col.md-15 {
+    width: 160%;
+    margin-right: -16428.57142857%;
+  }
+  .col.md-16 {
+    width: 150%;
+    margin-right: -15333.33333333%;
+  }
+  .col.md-17 {
+    width: 141.17647059%;
+    margin-right: -14375%;
+  }
+  .col.md-18 {
+    width: 133.33333333%;
+    margin-right: -13529.41176471%;
+  }
+  .col.md-19 {
+    width: 126.31578947%;
+    margin-right: -12777.77777778%;
   }
   .col.md-20 {
-    width: 19.98%;
-    max-width: 76.5rem;
+    width: 120%;
+    margin-right: -12105.26315789%;
   }
-  .col.md-25 {
-    width: 24.98%;
-    max-width: 76.5rem;
+  .col.md-21 {
+    width: 114.28571429%;
+    margin-right: -11500%;
   }
-  .col.md-30 {
-    width: 29.98%;
-    max-width: 76.5rem;
+  .col.md-22 {
+    width: 109.09090909%;
+    margin-right: -10952.38095238%;
   }
-  .col.md-33 {
-    width: 33.33%;
-    max-width: 76.5rem;
+  .col.md-23 {
+    width: 104.34782609%;
+    margin-right: -10454.54545455%;
   }
-  .col.md-40 {
-    width: 40%;
-    max-width: 76.5rem;
-  }
-  .col.md-50 {
-    width: 49.98%;
-    max-width: 76.5rem;
-  }
-  .col.md-60 {
-    width: 59.98%;
-    max-width: 76.5rem;
-  }
-  .col.md-66 {
-    width: 66.66%;
-    max-width: 76.5rem;
-  }
-  .col.md-70 {
-    width: 69.96%;
-    max-width: 76.5rem;
-  }
-  .col.md-75 {
-    width: 74.98%;
-    max-width: 76.5rem;
-  }
-  .col.md-80 {
-    width: 79.98%;
-    max-width: 76.5rem;
-  }
-  .col.md-90 {
-    width: 89.98%;
-    max-width: 76.5rem;
-  }
-  .col.md-100 {
-    width: 99.98%;
-    max-width: 76.5rem;
+  .col.md-24 {
+    width: 100%;
+    margin-right: -10000%;
   }
 }
 /* Tablet (portrait) */
@@ -493,61 +625,101 @@ img.small {
 /* Phones (portrait and landscape) */
 @media only screen and (min-width: 20rem) and (max-width: 48rem) {
   /* Columns */
+  .col.sm-1 {
+    width: 2400%;
+    margin-right: -Infinity%;
+  }
+  .col.sm-2 {
+    width: 1200%;
+    margin-right: -230000%;
+  }
+  .col.sm-3 {
+    width: 800%;
+    margin-right: -115000%;
+  }
+  .col.sm-4 {
+    width: 600%;
+    margin-right: -76666.66666667%;
+  }
+  .col.sm-5 {
+    width: 480%;
+    margin-right: -57500%;
+  }
+  .col.sm-6 {
+    width: 400%;
+    margin-right: -46000%;
+  }
+  .col.sm-7 {
+    width: 342.85714286%;
+    margin-right: -38333.33333333%;
+  }
+  .col.sm-8 {
+    width: 300%;
+    margin-right: -32857.14285714%;
+  }
+  .col.sm-9 {
+    width: 266.66666667%;
+    margin-right: -28750%;
+  }
   .col.sm-10 {
-    width: §          9.98%;
-    max-width: 48rem;
+    width: 240%;
+    margin-right: -25555.55555556%;
+  }
+  .col.sm-11 {
+    width: 218.18181818%;
+    margin-right: -23000%;
+  }
+  .col.sm-12 {
+    width: 200%;
+    margin-right: -20909.09090909%;
+  }
+  .col.sm-13 {
+    width: 184.61538462%;
+    margin-right: -19166.66666667%;
+  }
+  .col.sm-14 {
+    width: 171.42857143%;
+    margin-right: -17692.30769231%;
+  }
+  .col.sm-15 {
+    width: 160%;
+    margin-right: -16428.57142857%;
+  }
+  .col.sm-16 {
+    width: 150%;
+    margin-right: -15333.33333333%;
+  }
+  .col.sm-17 {
+    width: 141.17647059%;
+    margin-right: -14375%;
+  }
+  .col.sm-18 {
+    width: 133.33333333%;
+    margin-right: -13529.41176471%;
+  }
+  .col.sm-19 {
+    width: 126.31578947%;
+    margin-right: -12777.77777778%;
   }
   .col.sm-20 {
-    width: 19.98%;
-    max-width: 48rem;
+    width: 120%;
+    margin-right: -12105.26315789%;
   }
-  .col.sm-25 {
-    width: 24.98%;
-    max-width: 48rem;
+  .col.sm-21 {
+    width: 114.28571429%;
+    margin-right: -11500%;
   }
-  .col.sm-30 {
-    width: 29.98%;
-    max-width: 48rem;
+  .col.sm-22 {
+    width: 109.09090909%;
+    margin-right: -10952.38095238%;
   }
-  .col.sm-33 {
-    width: 33.33%;
-    max-width: 48rem;
+  .col.sm-23 {
+    width: 104.34782609%;
+    margin-right: -10454.54545455%;
   }
-  .col.sm-40 {
-    width: 40%;
-    max-width: 48rem;
-  }
-  .col.sm-50 {
-    width: 49.98%;
-    max-width: 48rem;
-  }
-  .col.sm-60 {
-    width: 59.98%;
-    max-width: 48rem;
-  }
-  .col.sm-66 {
-    width: 66.66%;
-    max-width: 48rem;
-  }
-  .col.sm-70 {
-    width: 69.96%;
-    max-width: 48rem;
-  }
-  .col.sm-75 {
-    width: 74.98%;
-    max-width: 48rem;
-  }
-  .col.sm-80 {
-    width: 79.98%;
-    max-width: 48rem;
-  }
-  .col.sm-90 {
-    width: 89.98%;
-    max-width: 48rem;
-  }
-  .col.sm-100 {
-    width: 99.98%;
-    max-width: 48rem;
+  .col.sm-24 {
+    width: 100%;
+    margin-right: -10000%;
   }
 }
 /* Phones (portrait)  */

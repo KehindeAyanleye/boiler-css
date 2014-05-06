@@ -1,7 +1,43 @@
 /**
-    This adds a solid black border to elements, which
-    comes in handy for wireframing a site.
+ * This adds a solid black border to elements, which
+ * comes in handy for wireframing a site.
  */
-.wireframe {
+.wireframe () {
   border: 2px solid black;
+}
+
+/**
+ * Apply clearfix hack
+ */
+//.clearfix () {
+//  &:before,
+//  &:after {
+//    content: " ",
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+//    display: table;
+//  }
+//  &:after {
+//    clear: both;
+//  }
+//}
+
+/**
+ * Center element within parent element
+ */
+.center-block () {
+  display: block;
+  margin: 0 auto;
+}
+
+/**
+ * Determine column and gutter width
+ */
+.getColumnWidth (@columns) {
+  @gutters: @columns - 1;
+  @width: percentage(@grid-columns / @columns);
+  width: @width;
+  margin-right: percentage((100 - (@width * @columns)) / @gutters);
 }
