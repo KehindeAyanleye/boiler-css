@@ -19,12 +19,6 @@
  * Breakpoints
  ******************/
 /******************
- * Styles
- ******************/
-/******************
- * Widths
- ******************/
-/******************
  * The Grid
  ******************/
 /** SMACSS File Layout */
@@ -234,21 +228,8 @@ p {
 .hero .hero:last-child-child {
   margin-bottom: 0;
 }
-.menu {
-  color: #000000;
-}
-.menu a {
-  color: #000000;
-}
 .menu > * {
   padding: 1rem;
-  background-color: #ffffff;
-}
-.menu > *:hover {
-  background-color: #ffffff;
-}
-.menu > *:hover a {
-  color: #000000;
 }
 .menu .brand {
   padding: 0.9rem 1rem;
