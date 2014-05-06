@@ -248,21 +248,29 @@ p {
   border-top: 1px solid #ccc;
 }
 /* .menu */
-/* Dropdown menu */
+/*
+ * @description Dropdown menu
+ */
 .dropdown {
   position: relative;
+  /*
+   * @description Element that triggers the dropdown-menu to appear
+   */
+  /*
+   * @description The dropdown element
+   */
 }
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  text-align: center;
-}
-.dropdown-menu > * {
+.dropdown .dropdown-trigger {
   display: block;
 }
+.dropdown .dropdown-menu {
+  position: absolute;
+  display: none;
+}
+/* .dropdown */
 .blr-field {
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
