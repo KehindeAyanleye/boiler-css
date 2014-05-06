@@ -32,19 +32,15 @@
 /**
  * Make list of columns
  */
-.makeColumns(@size, @gutter) {
-  @start: 1;
-  @end: @grid-columns + 1;
-  @gutter-width: percentage(@gutter/100);
+.makeColumns(@size; @gutter: @grid-column-gutter) {
 
-  .makeCol(@i) when (@i < @end) {
+  .makeCol(@i) when (@i < (@grid-columns + 1)) {
     .col.@{size}-@{i} {
-      width: percentage((((@i / @grid-columns) * 100) - @gutter) / 100);
-      margin-left: @gutter-width;
-      &:last-child { margin-right: 0; }
+      width: percentage((@i / @grid-columns));
+      padding: 1rem percentage((@gutter/200));
     }
     .makeCol((@i + 1));
   }
 
-  .makeCol(@start);
+  .makeCol(1);
 }
