@@ -6,23 +6,20 @@
   border: 2px solid black;
 }
 
-/**
- * Apply clearfix hack
- */
-//.clearfix () {
-//  &:before,
-//  &:after {
-//    content: " ",
+.clearfix () {
+  &:before,
+  &:after {
+    content: " ";
     /**
      * Using table as the display property makes the element contain
      * the top margins of it's floated children.
      */
-//    display: table;
-//  }
-//  &:after {
-//    clear: both;
-//  }
-//}
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 /**
  * Center element within parent element
@@ -33,11 +30,21 @@
 }
 
 /**
- * Determine column and gutter width
+ * Make list of columns
  */
-.getColumnWidth (@columns) {
-  @gutters: @columns - 1;
-  @width: percentage(@grid-columns / @columns);
-  width: @width;
-  margin-right: percentage((100 - (@width * @columns)) / @gutters);
+.makeColumns(@size, @gutter) {
+  @start: 1;
+  @end: @grid-columns + 1;
+  @gutter-width: percentage(@gutter/100);
+
+  .makeCol(@i) when (@i < @end) {
+    .col.@{size}-@{i} {
+      width: percentage((((@i / @grid-columns) * 100) - @gutter) / 100);
+      margin-left: @gutter-width;
+      &:last-child { margin-right: 0; }
+    }
+    .makeCol((@i + 1));
+  }
+
+  .makeCol(@start);
 }
