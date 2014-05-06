@@ -21,15 +21,27 @@
 
 } /* .menu */
 
-/* Dropdown menu */
+/*
+ * @description Dropdown menu
+ */
 .dropdown {
   position: relative;
   &:hover > .dropdown-menu { .block; }
-}
 
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  text-align: center;
-  & > * { .block; }
-}
+  /*
+   * @description Element that triggers the dropdown-menu to appear
+   */
+  .dropdown-trigger {
+    display: block;
+  }
+
+  /*
+   * @description The dropdown element
+   */
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+  }
+
+} /* .dropdown */
+
