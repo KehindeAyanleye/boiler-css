@@ -29,17 +29,16 @@
   width: 100%;
   padding: 0 1rem;
 
-  @media all and (min-width: @tablet-min-width) {
+  @media all and (max-width: @phone-max-width) {
+
+  }
+
+  @media all and (max-height: @tablet-max-width) {
 
   }
 
   @media all and (min-width: @desktop-width) {
-    .dropdown-trigger,
-    .dropdown-menu,
-    .dropdown-menu > * { display: inline-block; }
-    .dropdown-menu {
-      position: relative;
-    }
+
   }
 
   .brand {
