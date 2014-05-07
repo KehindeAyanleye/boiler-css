@@ -8,10 +8,10 @@ var gutil = require('gulp-util');
 /* Custom reporter for CSS Lint */
 var customReporter = function(file) {
     var errorCount = file.csslint.errorCount;
-    var errorColorized = gutil.colors.cyan(errorCount;
+    var errorColorized = gutil.colors.cyan(errorCount);
     var filePathColorized = gutil.colors.magenta(file.path);
 
-    gutil.log(errorColorized)+' errors in '+ filePathColorized);
+    gutil.log(errorColorized+' errors in '+ filePathColorized);
 
     file.csslint.results.forEach(function(result) {
         gutil.log(result.error.message+' on line '+result.error.line);
@@ -47,7 +47,7 @@ var concatinate = function() {
 };
 
 /* Convert LESS files to CSS */
-var less = function() {
+var lessToCSS = function() {
     gulp.src('src/boiler.less')
         .pipe(less())
         .pipe(gulp.dest('dist'));
@@ -63,7 +63,7 @@ var watchFiles = function() {
  */
 gulp.task('server', startServer);
 gulp.task('concat', concatinate);
-gulp.task('less', less);
+gulp.task('less', lessToCSS);
 gulp.task('watch', watchFiles);
 gulp.task('build', [ 'less', 'concat' ]);
 gulp.task('default', [ 'build', 'watch', 'server' ]);
