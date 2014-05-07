@@ -7,6 +7,15 @@
  * Center element within parent element
  */
 /**
+ * Apply transition to element
+ */
+/**
+ * Make element absolutely positioned
+ */
+/**
+ * Make element fixed positioned
+ */
+/**
  * Make list of columns
  */
 /******************
@@ -116,7 +125,7 @@ p {
  */
 .col {
   float: left;
-  padding: 1rem;
+  min-height: 1rem;
   margin-bottom: 1rem;
 }
 /* Widths */
@@ -357,97 +366,385 @@ img.small {
     width: 4.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.lg-1:before,
+  .col.lg-1:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-1:after {
+    clear: both;
+  }
   .col.lg-2 {
     width: 8.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-2:before,
+  .col.lg-2:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-2:after {
+    clear: both;
   }
   .col.lg-3 {
     width: 12.5%;
     padding: 1rem 1.5%;
   }
+  .col.lg-3:before,
+  .col.lg-3:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-3:after {
+    clear: both;
+  }
   .col.lg-4 {
     width: 16.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-4:before,
+  .col.lg-4:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-4:after {
+    clear: both;
   }
   .col.lg-5 {
     width: 20.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.lg-5:before,
+  .col.lg-5:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-5:after {
+    clear: both;
+  }
   .col.lg-6 {
     width: 25%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-6:before,
+  .col.lg-6:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-6:after {
+    clear: both;
   }
   .col.lg-7 {
     width: 29.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.lg-7:before,
+  .col.lg-7:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-7:after {
+    clear: both;
+  }
   .col.lg-8 {
     width: 33.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-8:before,
+  .col.lg-8:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-8:after {
+    clear: both;
   }
   .col.lg-9 {
     width: 37.5%;
     padding: 1rem 1.5%;
   }
+  .col.lg-9:before,
+  .col.lg-9:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-9:after {
+    clear: both;
+  }
   .col.lg-10 {
     width: 41.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-10:before,
+  .col.lg-10:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-10:after {
+    clear: both;
   }
   .col.lg-11 {
     width: 45.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.lg-11:before,
+  .col.lg-11:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-11:after {
+    clear: both;
+  }
   .col.lg-12 {
     width: 50%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-12:before,
+  .col.lg-12:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-12:after {
+    clear: both;
   }
   .col.lg-13 {
     width: 54.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.lg-13:before,
+  .col.lg-13:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-13:after {
+    clear: both;
+  }
   .col.lg-14 {
     width: 58.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-14:before,
+  .col.lg-14:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-14:after {
+    clear: both;
   }
   .col.lg-15 {
     width: 62.5%;
     padding: 1rem 1.5%;
   }
+  .col.lg-15:before,
+  .col.lg-15:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-15:after {
+    clear: both;
+  }
   .col.lg-16 {
     width: 66.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-16:before,
+  .col.lg-16:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-16:after {
+    clear: both;
   }
   .col.lg-17 {
     width: 70.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.lg-17:before,
+  .col.lg-17:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-17:after {
+    clear: both;
+  }
   .col.lg-18 {
     width: 75%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-18:before,
+  .col.lg-18:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-18:after {
+    clear: both;
   }
   .col.lg-19 {
     width: 79.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.lg-19:before,
+  .col.lg-19:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-19:after {
+    clear: both;
+  }
   .col.lg-20 {
     width: 83.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-20:before,
+  .col.lg-20:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-20:after {
+    clear: both;
   }
   .col.lg-21 {
     width: 87.5%;
     padding: 1rem 1.5%;
   }
+  .col.lg-21:before,
+  .col.lg-21:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-21:after {
+    clear: both;
+  }
   .col.lg-22 {
     width: 91.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-22:before,
+  .col.lg-22:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-22:after {
+    clear: both;
   }
   .col.lg-23 {
     width: 95.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.lg-23:before,
+  .col.lg-23:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-23:after {
+    clear: both;
+  }
   .col.lg-24 {
     width: 100%;
     padding: 1rem 1.5%;
+  }
+  .col.lg-24:before,
+  .col.lg-24:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.lg-24:after {
+    clear: both;
   }
 }
 /* Large Screens */
@@ -456,97 +753,385 @@ img.small {
     width: 4.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.xl-1:before,
+  .col.xl-1:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-1:after {
+    clear: both;
+  }
   .col.xl-2 {
     width: 8.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-2:before,
+  .col.xl-2:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-2:after {
+    clear: both;
   }
   .col.xl-3 {
     width: 12.5%;
     padding: 1rem 1.5%;
   }
+  .col.xl-3:before,
+  .col.xl-3:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-3:after {
+    clear: both;
+  }
   .col.xl-4 {
     width: 16.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-4:before,
+  .col.xl-4:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-4:after {
+    clear: both;
   }
   .col.xl-5 {
     width: 20.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.xl-5:before,
+  .col.xl-5:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-5:after {
+    clear: both;
+  }
   .col.xl-6 {
     width: 25%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-6:before,
+  .col.xl-6:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-6:after {
+    clear: both;
   }
   .col.xl-7 {
     width: 29.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.xl-7:before,
+  .col.xl-7:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-7:after {
+    clear: both;
+  }
   .col.xl-8 {
     width: 33.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-8:before,
+  .col.xl-8:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-8:after {
+    clear: both;
   }
   .col.xl-9 {
     width: 37.5%;
     padding: 1rem 1.5%;
   }
+  .col.xl-9:before,
+  .col.xl-9:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-9:after {
+    clear: both;
+  }
   .col.xl-10 {
     width: 41.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-10:before,
+  .col.xl-10:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-10:after {
+    clear: both;
   }
   .col.xl-11 {
     width: 45.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.xl-11:before,
+  .col.xl-11:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-11:after {
+    clear: both;
+  }
   .col.xl-12 {
     width: 50%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-12:before,
+  .col.xl-12:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-12:after {
+    clear: both;
   }
   .col.xl-13 {
     width: 54.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.xl-13:before,
+  .col.xl-13:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-13:after {
+    clear: both;
+  }
   .col.xl-14 {
     width: 58.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-14:before,
+  .col.xl-14:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-14:after {
+    clear: both;
   }
   .col.xl-15 {
     width: 62.5%;
     padding: 1rem 1.5%;
   }
+  .col.xl-15:before,
+  .col.xl-15:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-15:after {
+    clear: both;
+  }
   .col.xl-16 {
     width: 66.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-16:before,
+  .col.xl-16:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-16:after {
+    clear: both;
   }
   .col.xl-17 {
     width: 70.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.xl-17:before,
+  .col.xl-17:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-17:after {
+    clear: both;
+  }
   .col.xl-18 {
     width: 75%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-18:before,
+  .col.xl-18:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-18:after {
+    clear: both;
   }
   .col.xl-19 {
     width: 79.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.xl-19:before,
+  .col.xl-19:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-19:after {
+    clear: both;
+  }
   .col.xl-20 {
     width: 83.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-20:before,
+  .col.xl-20:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-20:after {
+    clear: both;
   }
   .col.xl-21 {
     width: 87.5%;
     padding: 1rem 1.5%;
   }
+  .col.xl-21:before,
+  .col.xl-21:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-21:after {
+    clear: both;
+  }
   .col.xl-22 {
     width: 91.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-22:before,
+  .col.xl-22:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-22:after {
+    clear: both;
   }
   .col.xl-23 {
     width: 95.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.xl-23:before,
+  .col.xl-23:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-23:after {
+    clear: both;
+  }
   .col.xl-24 {
     width: 100%;
     padding: 1rem 1.5%;
+  }
+  .col.xl-24:before,
+  .col.xl-24:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.xl-24:after {
+    clear: both;
   }
 }
 /* Tablets (portrait and landscape) */
@@ -555,97 +1140,385 @@ img.small {
     width: 4.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.md-1:before,
+  .col.md-1:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-1:after {
+    clear: both;
+  }
   .col.md-2 {
     width: 8.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.md-2:before,
+  .col.md-2:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-2:after {
+    clear: both;
   }
   .col.md-3 {
     width: 12.5%;
     padding: 1rem 1.5%;
   }
+  .col.md-3:before,
+  .col.md-3:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-3:after {
+    clear: both;
+  }
   .col.md-4 {
     width: 16.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.md-4:before,
+  .col.md-4:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-4:after {
+    clear: both;
   }
   .col.md-5 {
     width: 20.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.md-5:before,
+  .col.md-5:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-5:after {
+    clear: both;
+  }
   .col.md-6 {
     width: 25%;
     padding: 1rem 1.5%;
+  }
+  .col.md-6:before,
+  .col.md-6:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-6:after {
+    clear: both;
   }
   .col.md-7 {
     width: 29.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.md-7:before,
+  .col.md-7:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-7:after {
+    clear: both;
+  }
   .col.md-8 {
     width: 33.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.md-8:before,
+  .col.md-8:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-8:after {
+    clear: both;
   }
   .col.md-9 {
     width: 37.5%;
     padding: 1rem 1.5%;
   }
+  .col.md-9:before,
+  .col.md-9:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-9:after {
+    clear: both;
+  }
   .col.md-10 {
     width: 41.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.md-10:before,
+  .col.md-10:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-10:after {
+    clear: both;
   }
   .col.md-11 {
     width: 45.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.md-11:before,
+  .col.md-11:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-11:after {
+    clear: both;
+  }
   .col.md-12 {
     width: 50%;
     padding: 1rem 1.5%;
+  }
+  .col.md-12:before,
+  .col.md-12:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-12:after {
+    clear: both;
   }
   .col.md-13 {
     width: 54.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.md-13:before,
+  .col.md-13:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-13:after {
+    clear: both;
+  }
   .col.md-14 {
     width: 58.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.md-14:before,
+  .col.md-14:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-14:after {
+    clear: both;
   }
   .col.md-15 {
     width: 62.5%;
     padding: 1rem 1.5%;
   }
+  .col.md-15:before,
+  .col.md-15:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-15:after {
+    clear: both;
+  }
   .col.md-16 {
     width: 66.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.md-16:before,
+  .col.md-16:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-16:after {
+    clear: both;
   }
   .col.md-17 {
     width: 70.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.md-17:before,
+  .col.md-17:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-17:after {
+    clear: both;
+  }
   .col.md-18 {
     width: 75%;
     padding: 1rem 1.5%;
+  }
+  .col.md-18:before,
+  .col.md-18:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-18:after {
+    clear: both;
   }
   .col.md-19 {
     width: 79.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.md-19:before,
+  .col.md-19:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-19:after {
+    clear: both;
+  }
   .col.md-20 {
     width: 83.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.md-20:before,
+  .col.md-20:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-20:after {
+    clear: both;
   }
   .col.md-21 {
     width: 87.5%;
     padding: 1rem 1.5%;
   }
+  .col.md-21:before,
+  .col.md-21:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-21:after {
+    clear: both;
+  }
   .col.md-22 {
     width: 91.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.md-22:before,
+  .col.md-22:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-22:after {
+    clear: both;
   }
   .col.md-23 {
     width: 95.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.md-23:before,
+  .col.md-23:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-23:after {
+    clear: both;
+  }
   .col.md-24 {
     width: 100%;
     padding: 1rem 1.5%;
+  }
+  .col.md-24:before,
+  .col.md-24:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.md-24:after {
+    clear: both;
   }
 }
 /* Tablet (portrait) */
@@ -662,97 +1535,385 @@ img.small {
     width: 4.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.sm-1:before,
+  .col.sm-1:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-1:after {
+    clear: both;
+  }
   .col.sm-2 {
     width: 8.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-2:before,
+  .col.sm-2:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-2:after {
+    clear: both;
   }
   .col.sm-3 {
     width: 12.5%;
     padding: 1rem 1.5%;
   }
+  .col.sm-3:before,
+  .col.sm-3:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-3:after {
+    clear: both;
+  }
   .col.sm-4 {
     width: 16.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-4:before,
+  .col.sm-4:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-4:after {
+    clear: both;
   }
   .col.sm-5 {
     width: 20.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.sm-5:before,
+  .col.sm-5:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-5:after {
+    clear: both;
+  }
   .col.sm-6 {
     width: 25%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-6:before,
+  .col.sm-6:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-6:after {
+    clear: both;
   }
   .col.sm-7 {
     width: 29.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.sm-7:before,
+  .col.sm-7:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-7:after {
+    clear: both;
+  }
   .col.sm-8 {
     width: 33.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-8:before,
+  .col.sm-8:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-8:after {
+    clear: both;
   }
   .col.sm-9 {
     width: 37.5%;
     padding: 1rem 1.5%;
   }
+  .col.sm-9:before,
+  .col.sm-9:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-9:after {
+    clear: both;
+  }
   .col.sm-10 {
     width: 41.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-10:before,
+  .col.sm-10:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-10:after {
+    clear: both;
   }
   .col.sm-11 {
     width: 45.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.sm-11:before,
+  .col.sm-11:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-11:after {
+    clear: both;
+  }
   .col.sm-12 {
     width: 50%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-12:before,
+  .col.sm-12:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-12:after {
+    clear: both;
   }
   .col.sm-13 {
     width: 54.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.sm-13:before,
+  .col.sm-13:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-13:after {
+    clear: both;
+  }
   .col.sm-14 {
     width: 58.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-14:before,
+  .col.sm-14:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-14:after {
+    clear: both;
   }
   .col.sm-15 {
     width: 62.5%;
     padding: 1rem 1.5%;
   }
+  .col.sm-15:before,
+  .col.sm-15:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-15:after {
+    clear: both;
+  }
   .col.sm-16 {
     width: 66.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-16:before,
+  .col.sm-16:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-16:after {
+    clear: both;
   }
   .col.sm-17 {
     width: 70.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.sm-17:before,
+  .col.sm-17:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-17:after {
+    clear: both;
+  }
   .col.sm-18 {
     width: 75%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-18:before,
+  .col.sm-18:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-18:after {
+    clear: both;
   }
   .col.sm-19 {
     width: 79.16666667%;
     padding: 1rem 1.5%;
   }
+  .col.sm-19:before,
+  .col.sm-19:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-19:after {
+    clear: both;
+  }
   .col.sm-20 {
     width: 83.33333333%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-20:before,
+  .col.sm-20:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-20:after {
+    clear: both;
   }
   .col.sm-21 {
     width: 87.5%;
     padding: 1rem 1.5%;
   }
+  .col.sm-21:before,
+  .col.sm-21:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-21:after {
+    clear: both;
+  }
   .col.sm-22 {
     width: 91.66666667%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-22:before,
+  .col.sm-22:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-22:after {
+    clear: both;
   }
   .col.sm-23 {
     width: 95.83333333%;
     padding: 1rem 1.5%;
   }
+  .col.sm-23:before,
+  .col.sm-23:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-23:after {
+    clear: both;
+  }
   .col.sm-24 {
     width: 100%;
     padding: 1rem 1.5%;
+  }
+  .col.sm-24:before,
+  .col.sm-24:after {
+    content: " ";
+    /**
+     * Using table as the display property makes the element contain
+     * the top margins of it's floated children.
+     */
+    display: table;
+  }
+  .col.sm-24:after {
+    clear: both;
   }
 }
 /* Phones (portrait)  */

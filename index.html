@@ -12,7 +12,8 @@
     <![endif]-->
     <link rel="stylesheet" href="dist/boiler.css">
     <style type="text/css" media="screen">
-        #columns .row > * { border: 1px solid black; height: 20rem; }
+        #columns .row > .col, .col .col { border: 1px solid black; height:
+        20rem; }
         .main-hero { background-color: rgba(215, 157, 241, 1); color: white};
     </style>
 </head>
@@ -80,10 +81,12 @@
         <section class="hero center-text" id="columns">
             <h1>The Grid</h1>
             <section class="row">
-                <div class="col sm-4 md-6 lg-12"></div>
-                <div class="col sm-10 md-6 lg-12"></div>
-                <div class="col sm-5 md-6 lg-12"></div>
-                <div class="col sm-5 md-6 lg-12"></div>
+                <div class="col sm-24 md-24 lg-24">
+                    <div class="col sm-4 md-6 lg-4"></div>
+                    <div class="col sm-10 md-6 lg-12"></div>
+                    <div class="col sm-5 md-6 lg-4"></div>
+                    <div class="col sm-5 md-6 lg-2"></div>
+                </div>
             </section>
         </section>
     </div>

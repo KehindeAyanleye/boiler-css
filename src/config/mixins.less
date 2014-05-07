@@ -29,6 +29,53 @@
   margin: 0 auto;
 }
 
+
+/**
+ * Apply transition to element
+ */
+.transition (@property: all; @duration: 1s; @timing: ease; @delay: 200ms) {
+  -moz-trasition: @property @duration @timing @delay;
+}
+
+.bottom(@v) when (@v >= 0) {
+  bottom: @v;
+}
+
+.left(@v) when (@v >= 0) {
+  left: @v;
+}
+
+.right(@v) when (@v >= 0) {
+  right: @v;
+}
+
+.top(@v) when (@v >= 0) {
+  top: @v;
+}
+
+.positionValues (@top, @right, @bottom, @left) {
+  .top(@top);
+  .right(@right);
+  .bottom(@bottom);
+  .left(@left);
+}
+
+/**
+ * Make element absolutely positioned
+ */
+.absolute (@top: 0; @right; @bottom; @left: 0) {
+  position: absolute;
+  .positionValues(@top, @right, @bottom, @left);
+}
+
+/**
+ * Make element fixed positioned
+ */
+.fixed (@top: 0; @right; @bottom; @left: 0) {
+  position: fixed;
+  .positionValues(@top, @right, @bottom, @left);
+}
+
 /**
  * Make list of columns
  */
@@ -36,6 +83,7 @@
 
   .makeCol(@i) when (@i < (@grid-columns + 1)) {
     .col.@{size}-@{i} {
+      .clearfix();
       width: percentage((@i / @grid-columns));
       padding: 1rem percentage((@gutter/200));
     }
