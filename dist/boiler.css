@@ -237,40 +237,17 @@ p {
 .hero .hero:last-child-child {
   margin-bottom: 0;
 }
-.menu > * {
-  padding: 1rem;
-}
-.menu .brand {
-  padding: 0.9rem 1rem;
-  font-size: 1.5rem;
-}
-.menu.horizontal.group {
-  border-right: 1px solid #ccc;
-}
-.menu.horizontal.group:first-child {
-  border-left: 1px solid #ccc;
-}
-.menu.vertical.group {
-  border-bottom: 1px solid #ccc;
-}
-.menu.vertical.group:first-child {
-  border-top: 1px solid #ccc;
-}
-/* .menu */
-/*
- * @description Dropdown menu
+/**
+ * Dropdown menu
  */
 .dropdown {
   position: relative;
   /*
-   * @description Element that triggers the dropdown-menu to appear
+   * Element that triggers the dropdown-menu to appear
    */
-  /*
-   * @description The dropdown element
+  /**
+   * The dropdown element
    */
-}
-.dropdown:hover > .dropdown-menu {
-  display: block;
 }
 .dropdown .dropdown-trigger {
   display: block;
@@ -279,7 +256,32 @@ p {
   position: absolute;
   display: none;
 }
+.dropdown .dropdown-menu > * {
+  padding: 0.5rem;
+}
 /* .dropdown */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+}
+@media all and (min-width: 76.5rem) {
+  .top-nav .dropdown-trigger,
+  .top-nav .dropdown-menu,
+  .top-nav .dropdown-menu > * {
+    display: inline-block;
+  }
+  .top-nav .dropdown-menu {
+    position: relative;
+  }
+}
+.top-nav .brand {
+  padding: 0.9rem 1rem;
+  font-size: 1.5rem;
+}
+/* .top-nav */
 .blr-field {
   margin: 0.3rem 0.3rem;
   border-radius: 0.2rem;
