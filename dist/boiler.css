@@ -267,16 +267,6 @@ p {
   width: 100%;
   padding: 0 1rem;
 }
-@media all and (min-width: 76.5rem) {
-  .top-nav .dropdown-trigger,
-  .top-nav .dropdown-menu,
-  .top-nav .dropdown-menu > * {
-    display: inline-block;
-  }
-  .top-nav .dropdown-menu {
-    position: relative;
-  }
-}
 .top-nav .brand {
   padding: 0.9rem 1rem;
   font-size: 1.5rem;
