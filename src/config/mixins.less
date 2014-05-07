@@ -29,8 +29,27 @@
   margin: 0 auto;
 }
 
+
 /**
- * Make element fixed
+ * Apply transition to element
+ */
+.transition (@property: all; @duration: 1s; @timing: ease; @delay: 200ms) {
+  -moz-trasition: @property @duration @timing @delay;
+}
+
+/**
+ * Make element absolutely positioned
+ */
+.absolute (@top: 0; @right: 0; @bottom: 0; @left: 0) {
+  position: absolute;
+  bottom: @bottom;
+  left: @left;
+  right: @right;
+  top: @top;
+}
+
+/**
+ * Make element fixed positioned
  */
 .fixed (@top: 0; @right: 0; @bottom: 0; @left: 0) {
   position: fixed;
